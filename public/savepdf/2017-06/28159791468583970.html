@@ -1,0 +1,943 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>订单详情</title>
+<style>
+html{color:#000;overflow-y:scroll;background:#fff}body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,form,th,td{margin:0;padding:0}body,button,input,select,textarea{font:12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace}small{font-size:12px}ul,ol{list-style:none}a{text-decoration:none}a:hover{text-decoration:underline;color:#ff7300}abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help}q:before,q:after{content:''}:focus{outline:0}legend{color:#000}fieldset,img{border:none}button,input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}hr{border:none;height:1px;*color:#fff}img{-ms-interpolation-mode:bicubic}.fd-left{float:left}.fd-right{float:right}.fd-clear{clear:both}.fd-clr{zoom:1}.fd-clr:after{display:block;clear:both;height:0;overflow:hidden;content:"\0020"}.fd-hide{display:none}.fd-show{display:block}.fd-inline{display:inline}.fd-lump{display:inline-block;display:-moz-inline-stack;zoom:1;*display:inline}.fd-visible{visibility:visible}.fd-hidden{visibility:hidden}.fd-locate{position:relative}.fd-cny{font-family:Helvetica,Arial}.fd-gray{color:#666}.fd-bold{font-weight:700}.screen{width:990px;margin:0 auto;padding:0 5px}#header,#content,#footer,.layout{zoom:1}#header:after,#content:after,#footer:after,.layout:after{content:"\0020";display:block;height:0;clear:both;overflow:hidden}.grid-fixed{margin-right:0!important}.layout .grid-1{float:left;width:30px;margin-right:10px}.layout .grid-2{float:left;width:70px;margin-right:10px}.layout .grid-3{float:left;width:110px;margin-right:10px}.layout .grid-4{float:left;width:150px;margin-right:10px}.layout .grid-5{float:left;width:190px;margin-right:10px}.layout .grid-6{float:left;width:230px;margin-right:10px}.layout .grid-7{float:left;width:270px;margin-right:10px}.layout .grid-8{float:left;width:310px;margin-right:10px}.layout .grid-9{float:left;width:350px;margin-right:10px}.layout .grid-10{float:left;width:390px;margin-right:10px}.layout .grid-11{float:left;width:430px;margin-right:10px}.layout .grid-12{float:left;width:470px;margin-right:10px}.layout .grid-13{float:left;width:510px;margin-right:10px}.layout .grid-14{float:left;width:550px;margin-right:10px}.layout .grid-15{float:left;width:590px;margin-right:10px}.layout .grid-16{float:left;width:630px;margin-right:10px}.layout .grid-17{float:left;width:670px;margin-right:10px}.layout .grid-18{float:left;width:710px;margin-right:10px}.layout .grid-19{float:left;width:750px;margin-right:10px}.layout .grid-20{float:left;width:790px;margin-right:10px}.layout .grid-21{float:left;width:830px;margin-right:10px}.layout .grid-22{float:left;width:870px;margin-right:10px}.layout .grid-23{float:left;width:910px;margin-right:10px}.layout .grid-24{float:left;width:950px;margin-right:10px}.layout .grid-25{float:left;width:990px}h1,h2,h3,h4{font-weight:700}a:hover,a:active{color:#ff7300!important}.layout-space{margin-top:8px}.layout-space .layout{margin-bottom:8px}.layout-fixed{margin-bottom:0!important}.grid-right{float:right!important}.float-cancel{float:none!important}.last-col{margin-right:0!important;padding-right:0!important}.ms-yh{font-family:"\5FAE\8F6F\96C5\9ED1","\9ED1\4F53","\6587\6CC9\9A7F\6B63\9ED1\4F53","\534E\6587\7EC6\9ED1";font-weight:400}.repaint{zoom:1;background-color:transparent;-moz-outline:0}a.a-img,a.a-mix{display:inline-block;font-size:0;line-height:0}a.a-mix:hover,a.a-mix:active{text-decoration:none}a.a-mix img{margin-bottom:2px}a.a-mix span,a.a-mix .description{display:block;font-size:12px;line-height:1.5}.list{zoom:1}.list:after{display:block;clear:both;height:0;content:"\0020"}.list li{float:left}.list li li{float:none}.cell-header,{zoom:1}.cell-header:after{display:block;clear:both;height:0;content:"\0020"}.cell-header .title,.cell-header li,.cell-header dt,.cell-header dd,.cell-tags li{float:left}.cell-header p,.cell-header ul,.cell-header dl{overflow:hidden;_display:inline-block}.cell-header .panel{float:right}html{color:#444}.text-lesser,.lesser{color:#999}.text-stress,.stress{color:#ff7300}a:link,a:visited{color:#258}.text-paragraph a:link,.text-paragraph a:visited{color:#666}@font-face{font-family:'LanTing ZhongHei';src:url(http://at.alicdn.com/t/s2o9zbezyrolmcxr.eot);src:url(http://at.alicdn.com/t/s2o9zbezyrolmcxr.eot?#iefix) format('embedded-opentype'),url(http://at.alicdn.com/t/s2o9zbezyrolmcxr.woff) format('woff'),url(http://at.alicdn.com/t/s2o9zbezyrolmcxr.ttf) format('truetype'),url(http://at.alicdn.com/t/s2o9zbezyrolmcxr.svg#方正兰亭中黑_GBK) format('svg')}.layer-guide{background:#fbfbfb;border-top:1px solid #ff7300}.layer-main{background:#f3f3f3;border-top:1px solid #e5e5e5}.layer-major{background:#f3f3f3 url(http://cbu01.alicdn.com/cms/upload/2012/156/274/472651_532208266.png) repeat-x;border-top:1px solid #ff7300;padding:30px 0 64px}.layer-extra{border-top:1px solid #e5e5e5}.w952{width:990px;margin:0 auto}#alibar .alibar-container{width:990px!important}#footer #footer-v0{padding:0!important;width:auto!important}#footer #footer-v0 .ali-pages,#footer #footer-v0 .ali-group{width:990px;margin:0 auto}.button{vertical-align:middle;cursor:pointer;display:inline-block;*display:inline;*zoom:1;border-width:1px;border-style:solid;border-color:#c3c3c3;text-align:center;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;height:24px;line-height:23px;background-color:#f5f5f5;padding:0 12px;color:#333!important;background-image:-moz-linear-gradient(top,#f7f7f7,#e9e9e9);background-image:-ms-linear-gradient(top,#f7f7f7,#e9e9e9);background-image:-webkit-gradient(linear,0 0,0 100%,from(#f7f7f7),to(#e9e9e9));background-image:-webkit-linear-gradient(top,#f7f7f7,#e9e9e9);background-image:-o-linear-gradient(top,#f7f7f7,#e9e9e9);background-image:linear-gradient(top,#f7f7f7,#e9e9e9);-webkit-box-shadow:inset 0 0 1px 1px #f6f6f6;-moz-box-shadow:inset 0 0 1px 1px #f6f6f6;box-shadow:inset 0 0 1px 1px #f6f6f6}button.button{overflow:visible;cursor:pointer;height:26px;_height:24px;_line-height:21px}a.button:hover,a.button:active{text-decoration:none;color:#333!important}.button:hover{background-image:-moz-linear-gradient(top,#f5f5f5,#dedede);background-image:-ms-linear-gradient(top,#f5f5f5,#dedede);background-image:-webkit-gradient(linear,0 0,0 100%,from(#f5f5f5),to(#dedede));background-image:-webkit-linear-gradient(top,#f5f5f5,#dedede);background-image:-o-linear-gradient(top,#f5f5f5,#dedede);background-image:linear-gradient(top,#f5f5f5,#dedede)}.button:active{background-image:-moz-linear-gradient(top,#dedede,#f5f5f5);background-image:-ms-linear-gradient(top,#dedede,#f5f5f5);background-image:-webkit-gradient(linear,0 0,0 100%,from(#dedede),to(#f5f5f5));background-image:-webkit-linear-gradient(top,#dedede,#f5f5f5);background-image:-o-linear-gradient(top,#dedede,#f5f5f5);background-image:linear-gradient(top,#dedede,#f5f5f5)}.button-large{height:30px;line-height:29px;padding:0 18px;font-size:14px;font-weight:700}button.button-large{height:32px;_height:30px;_line-height:27px}.button-small{height:20px;line-height:19px;padding:0 8px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px}button.button-small{height:22px;_height:20px;_line-height:17px}.button-huge{height:34px;line-height:33px;padding:0 18px;font-size:14px;font-weight:700}button.button-huge{height:36px;_height:34px;_line-height:31px}.button-stress{border-color:#f6bb44;color:#a50!important;background-color:#feeca7;background-image:-moz-linear-gradient(top,#fff0b3,#fde48d);background-image:-ms-linear-gradient(top,#fff0b3,#fde48d);background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff0b3),to(#fde48d));background-image:-webkit-linear-gradient(top,#fff0b3,#fde48d);background-image:-o-linear-gradient(top,#fff0b3,#fde48d);background-image:linear-gradient(top,#fff0b3,#fde48d);-webkit-box-shadow:inset 0 0 1px 1px #fff8dc;-moz-box-shadow:inset 0 0 1px 1px #fff8dc;box-shadow:inset 0 0 1px 1px #fff8dc}a.button-stress:hover,a.button-stress:active{color:#a50!important}.button-stress:hover{background-image:-moz-linear-gradient(top,#ffedaf,#ffd67a);background-image:-ms-linear-gradient(top,#ffedaf,#ffd67a);background-image:-webkit-gradient(linear,0 0,0 100%,from(#ffedaf),to(#ffd67a));background-image:-webkit-linear-gradient(top,#ffedaf,#ffd67a);background-image:-o-linear-gradient(top,#ffedaf,#ffd67a);background-image:linear-gradient(top,#ffedaf,#ffd67a)}.button-stress:active{background-image:-moz-linear-gradient(top,#ffd67a,#ffedaf);background-image:-ms-linear-gradient(top,#ffd67a,#ffedaf);background-image:-webkit-gradient(linear,0 0,0 100%,from(#ffd67a),to(#ffedaf));background-image:-webkit-linear-gradient(top,#ffd67a,#ffedaf);background-image:-o-linear-gradient(top,#ffd67a,#ffedaf);background-image:linear-gradient(top,#ffd67a,#ffedaf)}.button-important{border-color:#ec3200;color:#fff!important;background-color:#f60;font-weight:700;background-image:-moz-linear-gradient(top,#ff7400,#ff5e00);background-image:-ms-linear-gradient(top,#ff7400,#ff5e00);background-image:-webkit-gradient(linear,0 0,0 100%,from(#ff7400),to(#ff5e00));background-image:-webkit-linear-gradient(top,#ff7400,#ff5e00);background-image:-o-linear-gradient(top,#ff7400,#ff5e00);background-image:linear-gradient(top,#ff7400,#ff5e00);-webkit-box-shadow:inset 0 0 1px 1px #f80;-moz-box-shadow:inset 0 0 1px 1px #f80;box-shadow:inset 0 0 1px 1px #f80}a.button-important:hover,a.button-important:active{color:#fff!important}.button-important:hover{background-image:-moz-linear-gradient(top,#fa6a01,#ef5104);background-image:-ms-linear-gradient(top,#fa6a01,#ef5104);background-image:-webkit-gradient(linear,0 0,0 100%,from(#fa6a01),to(#ef5104));background-image:-webkit-linear-gradient(top,#fa6a01,#ef5104);background-image:-o-linear-gradient(top,#fa6a01,#ef5104);background-image:linear-gradient(top,#fa6a01,#ef5104)}.button-important:active{background-image:-moz-linear-gradient(top,#ef5104,#fa6a01);background-image:-ms-linear-gradient(top,#ef5104,#fa6a01);background-image:-webkit-gradient(linear,0 0,0 100%,from(#ef5104),to(#fa6a01));background-image:-webkit-linear-gradient(top,#ef5104,#fa6a01);background-image:-o-linear-gradient(top,#ef5104,#fa6a01);background-image:linear-gradient(top,#ef5104,#fa6a01)}.button-disabled{border-color:#ddd;color:#ccc!important;background-color:#f9f9f9;background-image:-moz-linear-gradient(top,#fdfdfd,#f9f9f9);background-image:-ms-linear-gradient(top,#fdfdfd,#f9f9f9);background-image:-webkit-gradient(linear,0 0,0 100%,from(#fdfdfd),to(#f9f9f9));background-image:-webkit-linear-gradient(top,#fdfdfd,#f9f9f9);background-image:-o-linear-gradient(top,#fdfdfd,#f9f9f9);background-image:linear-gradient(top,#fdfdfd,#f9f9f9)}a.button-disabled:hover,a.button-disabled:active{color:#ccc!important}.button-disabled:hover,.button-disabled:active{background-image:-moz-linear-gradient(top,#fdfdfd,#f9f9f9);background-image:-ms-linear-gradient(top,#fdfdfd,#f9f9f9);background-image:-webkit-gradient(linear,0 0,0 100%,from(#fdfdfd),to(#f9f9f9));background-image:-webkit-linear-gradient(top,#fdfdfd,#f9f9f9);background-image:-o-linear-gradient(top,#fdfdfd,#f9f9f9);background-image:linear-gradient(top,#fdfdfd,#f9f9f9)}.buttons a.button,a.button-width{width:44px}.buttons-wide a.button,a.button-width-wide{width:51px}.buttons button.button,button.button-width{width:70px}.buttons-wide button.button,button.button-width-wide{width:77px;white-space:nowrap}.box-remind{background:#faf6f1;border:1px solid #acb1ba}.box-remind-bg{background:#faf6f1}.box-remind-pale{background:#fff;border:1px solid #f6d5b0}.box-remind-lumptip{background:#fffbdd;border:1px solid #e7d3ac}.box-striking{background:#f5fafe;border:1px solid #cae1fe}.box-striking-light{background:#fafdff;border:1px solid #e5eeff}.box-striking-pale{background:#fff;border:1px solid #cae1fe}.box-striking-lumptip{background:#e8f1f7;border:1px solid #b8c9d7}.box-divide{background:#fafafa;border:1px solid #e6e6e6}.box-divide-pale{background:#fff;border:1px solid #ebebeb}.unit-tabs{height:29px;border-bottom:1px solid #acb1ba;border-left:1px solid #d9d9d9;color:#444;font-size:12px}.cell-header .unit-tabs{overflow:visible}.unit-tabs li{*position:relative;margin-bottom:-1px;height:28px;border-top:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-bottom:1px solid #acb1ba}.unit-tabs .tab-option{display:inline-block;height:28px;padding:0 16px;line-height:28px;background:#f3f3f4;cursor:pointer}.unit-tabs .tab-option:hover{background:#f9f9f9}.unit-tabs li a,.unit-tabs li a:hover,.unit-tabs li a:active{color:#444!important;text-decoration:none}.unit-tabs li.active{border-top-color:#acb1ba;border-right-color:#acb1ba;border-bottom-color:#fff;border-left:1px solid #acb1ba;margin-left:-1px}.unit-tabs li.active .tab-option{background:#fff!important;font-weight:700;font-size:14px}.unit-tabs-small{height:23px}.unit-tabs-small li{height:22px}.unit-tabs-small li .tab-option{height:22px;line-height:22px}.zone-tabs-header{border-bottom:1px solid #acb1ba}.zone-tabs-header .unit-tabs{border-bottom:0 none;*position:relative;margin-bottom:-1px;height:30px;float:left}.zone-tabs-header .unit-tabs li{border-bottom:0 none;margin-bottom:0;height:29px}.zone-tabs-header .unit-tabs .active .tab-option{height:29px}.unit-stage .list{display:block;height:20px;padding:25px;margin:0;list-style-type:none}.unit-stage .stage-node,.unit-stage .stage-bar,.unit-stage .stage-far{height:20px;clear:none!important;background:url(http://cbu01.alicdn.com/cms/upload/2012/508/684/486805_532208266.gif) no-repeat}.unit-stage-orange .stage-node,.unit-stage-orange .stage-bar,.unit-stage-orange .stage-far{background:url(http://cbu01.alicdn.com/cms/upload/2012/708/684/486807_532208266.gif) no-repeat}.unit-stage .stage-node{float:left;display:block;width:20px;position:relative}.unit-stage .stage-first-pass{background-position:1px -120px}.unit-stage .stage-first-then{background-position:1px 0}.unit-stage .stage-first-current{background-position:1px -60px}.unit-stage .stage-last-pass{background-position:-139px -60px}.unit-stage .stage-last-then{background-position:-139px 0}.unit-stage .stage-last-current{background-position:-139px -60px}.unit-stage .stage-pass{background-position:-71px -120px}.unit-stage .stage-then{background-position:-71px 0}.unit-stage .stage-current{background-position:-71px -60px}.unit-stage .stage-one-then{background-position:-123px -120px}.unit-stage .stage-one-current{background-position:-161px -120px}.unit-stage .stage-one-pass{background-position:-161px -120px}.unit-stage .stage-bar{float:left;display:block;width:120px}.unit-stage .stage-bar-pass{background-repeat:repeat-x;background-position:0 -176px}.unit-stage .stage-bar-then{background-repeat:repeat-x;background-position:0 -236px}.unit-stage .stage-bar-current{background-repeat:repeat-x;background-position:0 -176px}.unit-stage .stage-far{display:none}.unit-stage .stage-bar-current .stage-far{float:right;display:block;width:50%;background-position:0 -236px;background-repeat:repeat-x}.unit-stage .stage-label{display:block;height:15px;width:130px;position:absolute;top:-23px;left:-55px;white-space:nowrap;text-align:center}.unit-stage .stage-label-down{top:20px}.unit-stage .four-stage .stage-bar{width:163px}.unit-stage .five-stage .stage-bar{width:117px}.unit-stage-special-widget{visibility:hidden}.unit-striptip{background:#ffffe5;border:1px solid #ffcc7f;padding:4px 8px}.unit-striptip .main{overflow:hidden;_display:inline-block}.unit-striptip .panel{float:right;height:10px;padding:4px 0 0 8px}.unit-striptip .close{display:inline-block;width:10px;height:10px;overflow:hidden;line-height:40px;background:url(http://cbu01.alicdn.com/cms/upload/trade/just/close.png) no-repeat;vertical-align:top}.unit-striptip .close:hover,.unit-striptip .close:active{background-position:0 -40px}.unit-bubbletip{position:absolute;background:#fff;border:1px solid #d8d8d8;-webkit-box-shadow:2px 2px rgba(0,0,0,.4);-moz-box-shadow:2px 2px rgba(0,0,0,.4);box-shadow:2px 2px rgba(0,0,0,.4)}.unit-bubbletip .main{padding:6px 12px;overflow:hidden;_display:inline-block}.unit-bubbletip .panel{float:right;_margin-left:-3px;padding:10px 8px 0 0}.unit-bubbletip .close{display:inline-block;width:10px;height:10px;overflow:hidden;line-height:40px;background:url(http://cbu01.alicdn.com/cms/upload/trade/just/close.png) no-repeat;vertical-align:top}.unit-bubbletip .close:hover,.unit-bubbletip .close:active{background-position:0 -40px}.unit-bubbletip .bubble{position:absolute;left:24px;width:14px;height:9px;background:url(http://cbu01.alicdn.com/cms/upload/trade/just/bubbletip.png) no-repeat 0 -200px;background-position:0 0 \9;overflow:hidden}.unit-bubbletip .bubble-top{top:-7px;background-position:0 -80px}.unit-bubbletip .bubble-left{top:10px;left:-7px;background-position:0 -20px;width:7px;height:12px}.unit-bubbletip .bubble-right{top:10px;right:-9px;left:auto;width:9px;height:14px;background-position:0 -220px;background-position:0 -50px \9}.unit-bubbletip-stress{background:#ffffe5;border-color:#ffcc7f}.unit-bubbletip-stress .bubble{background-position:0 -250px;background-position:0 -100px \9}.unit-bubbletip-stress .bubble-top{background-position:0 -180px}.unit-bubbletip-stress .bubble-left{background-position:0 -120px}.unit-bubbletip-stress .bubble-right{background-position:0 -270px;background-position:0 -150px \9}.unit-bubbletip-special-widget .main{float:left}.unit-bubbletip-special-widget .panel{_margin-left:0}.unit-bubbletip-special-widget .bubble{bottom:-9px}.img-vertical{display:table;text-align:center;overflow:hidden;font-size:0;*display:block;*layout-grid-line:100%}.img-vertical .img-wrap{display:table-cell;vertical-align:middle;*display:inline;*writing-mode:tb-rl;*text-align:center;*height:100%}.img-vertical img{vertical-align:middle}table .img-vertical{border-collapse:separate}.cell-thumbnail{zoom:1}.cell-thumbnail:after{display:block;clear:both;height:0;content:"\0020"}.cell-thumbnail dt{overflow:hidden;font-size:0;line-height:0;margin-bottom:2px}.cell-thumbnail dd{overflow:hidden;zoom:1}.cell-thumbnail dt.side{float:left;_margin-right:-3px;margin-bottom:0}.cell-thumbnail dt.wrap{overflow:visible;margin-bottom:0;font-size:12px;line-height:1.5}.mod-dialog{border:8px solid #999}.mod-dialog .header{height:32px;line-height:32px;background-color:#f0f0f0}.mod-dialog .header .title{padding-left:12px;font-size:14px}.mod-dialog .header .panel{line-height:1.5}.mod-dialog .header .close{display:inline-block;vertical-align:top;width:15px;height:15px;margin:8px 8px 0 0;overflow:hidden;line-height:50px;background:url(http://cbu01.alicdn.com/cms/upload/trade/just/dialog-close.png) no-repeat 0 3px}.mod-dialog .header .close:hover{background-position:0 -45px}.mod-dialog .content{border:1px solid #f0f0f0;border-top:0 none;padding:12px;background-color:#fff}.mod-dialog .footer{position:relative;zoom:1;margin-top:-5px;padding:0 8px 8px;background-color:#fff;border:1px solid #f0f0f0;border-top:0 none}.mod-dialog .footer .container{clear:left;border-top:1px solid #f0f0f0;padding:8px 6px 0}.mod-dialog .footer .panel{text-align:right}.mod-dialog .footer .panel .button{margin-left:8px}.msg-dlg{width:387px;display:none;background-color:#fff}.msg-dlg .btnbar .button{padding:0 25px}.msg-dlg .msg-dlg-msgct{padding:35px 25px 35px 60px;font-weight:700;font-size:14px;word-wrap:break-word;zoom:1}.msg-dlg .msg-dlg-extra{font-weight:400;font-size:12px}.msg-dlg .msg-dlg-info .msg-dlg-msgct{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/22.png) no-repeat 25px 32px}.msg-dlg .msg-dlg-error .msg-dlg-msgct{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/52.png) no-repeat 25px 32px}.msg-dlg .msg-dlg-warn .msg-dlg-msgct{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/12.png) no-repeat 25px 32px}.msg-dlg .msg-dlg-success .msg-dlg-msgct{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/42.png) no-repeat 25px 32px}.msg-dlg .msg-dlg-help .msg-dlg-msgct{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/31.png) no-repeat 25px 32px}.icon-warning-huge{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/11.png) no-repeat left center;padding-left:48px}.icon-warning-large{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/12.png) no-repeat left center;padding-left:36px}.icon-warning{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/13.png) no-repeat left center;padding-left:24px}.icon-warning-small{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/14.png) no-repeat left center;padding-left:16px}.icon-info-huge{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/21.png) no-repeat left center;padding-left:48px}.icon-info-large{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/22.png) no-repeat left center;padding-left:36px}.icon-info{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/23.png) no-repeat left center;padding-left:24px}.icon-info-small{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/24.png) no-repeat left center;padding-left:16px}.icon-help-huge{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/31.png) no-repeat left center;padding-left:48px}.icon-help-large{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/32.png) no-repeat left center;padding-left:36px}.icon-help{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/33.png) no-repeat left center;padding-left:24px}.icon-help-small{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/34.png) no-repeat left center;padding-left:16px}.icon-success-huge{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/41.png) no-repeat left center;padding-left:48px}.icon-success-large{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/42.png) no-repeat left center;padding-left:36px}.icon-success{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/43.png) no-repeat left center;padding-left:24px}.icon-success-small{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/44.png) no-repeat left center;padding-left:16px}#alibar{height:29px;border-bottom:1px solid #ddd;overflow:hidden}#alibar-v4{display:none}#masthead-v4{padding:12px 4px}#masthead-v4 .sub-logo-v4,#masthead-v4 .alisearch-type-v4 li,#masthead-v4 .alisearch-category-v4 h3,#masthead-v4 .alisearch-action-v4 button{background:url(http://cbu01.alicdn.com/cms/upload/homepage/masthead-v4.png) no-repeat}#masthead-v4 .ali-logo-v4{float:left;margin-top:6px}#masthead-v4 .main-logo-v4{display:block;float:left;margin:4px 12px 0 0;padding:4px;width:153px;height:37px;border-radius:2px;text-decoration:none}#masthead-v4 .sub-logo-v4{font-family:"LanTing ZhongHei","Microsoft Yahei";display:block;float:left;padding-left:12px;height:58px;line-height:58px;background-image:none;font-size:22px;font-weight:400;color:#222}#masthead-v4 a.sub-logo-v4{text-decoration:none}#masthead-v4 a.sub-logo-v4:hover{color:#ff7300}#masthead-v4 .ali-search-v4{float:right;width:540px}#masthead-v4 legend{display:none}#masthead-v4 .alisearch-type-v4{height:21px;_overflow:hidden}#masthead-v4 .alisearch-type-v4 li{float:left;width:64px;height:20px;line-height:1.5;border-top:solid 1px transparent;background-position:-160px -50px;text-align:center;cursor:pointer;_border-top-color:tomato;_filter:chroma(color=tomato)}#masthead-v4 .alisearch-type-v4 li.first,#masthead-v4 .alisearch-type-v4 li.current-next{background:0 0}#masthead-v4 .alisearch-type-v4 li.current{position:relative;width:62px;height:21px;border:solid 1px #c9c9c9;border-bottom:0 none;border-radius:2px 2px 0 0;background-image:none;background-color:#f7f7f7;font-weight:700}#masthead-v4 .alisearch-type-v4 a{color:#000;text-decoration:none}#masthead-v4 .alisearch-container-v4{padding:4px;height:26px;_overflow:hidden;border:solid 1px #c9c9c9;background-color:#f7f7f7}#masthead-v4 .alisearch-keywords-v4,#masthead-v4 .alisearch-category-v4,#masthead-v4 .alisearch-action-v4{float:left}#masthead-v4 .alisearch-keywords-v4{padding:0 4px;width:420px;height:24px;border:solid 1px #ececec;border-top:solid 1px #d1d1d1;background-color:#fff}#masthead-v4 .alisearch-extend .alisearch-keywords-v4{width:318px}#masthead-v4 .alisearch-keywords-v4 input{padding:2px 0;width:100%;height:20px;*height:18px;line-height:1.5;overflow:hidden;border:0 none}#masthead-v4 .alisearch-keywords-v4 input.empty{color:gray}#masthead-v4 .alisearch-category-v4{display:none;border-top:solid 1px #d1d1d1;border-bottom:solid 1px #ececec}#masthead-v4 .alisearch-extend .alisearch-category-v4{display:block}#masthead-v4 .alisearch-action-v4 button{width:99px;height:26px;overflow:hidden;border:0 none;cursor:pointer}#masthead-v4 .alisearch-action-v4 button.hover,#masthead-v4 .alisearch-action-v4 button:hover{background-position:left -26px}#masthead-v4 .alisearch-category-v4{position:relative;z-index:1011;cursor:default}#masthead-v4 .alisearch-category-v4 h3{padding:2px 22px 2px 8px;width:72px;height:20px;background-position:right -90px;background-color:#fff;line-height:20px}#masthead-v4 .category-hover h3{background-position:right -70px}#masthead-v4 .alisearch-category-v4 ul{display:none;position:absolute;left:-1px;top:24px;min-width:102px;_width:102px;border:solid 1px #d1d1d1;background-color:#fff;line-height:20px;box-shadow:rgba(0,0,0,.2) 1px 1px 1px 0}#masthead-v4 .category-hover ul{display:block}#masthead-v4 .alisearch-category-v4 li{padding:2px 8px;min-width:86px;_width:86px;height:20px}#masthead-v4 .alisearch-category-v4 li.hover,#masthead-v4 .alisearch-category-v4 li:hover{background-color:#ececec}#masthead-v4 .alisearch-category-v4 li.current{font-weight:700}#masthead-v5{padding:12px 4px}#masthead-v5 .sub-logo-v5,#masthead-v5 .alisearch-type-v5 li,#masthead-v5 .alisearch-category-v5 h3,#masthead-v5 .alisearch-action-v5 button{background:url(http://cbu01.alicdn.com/cms/upload/homepage/masthead-v5.png) no-repeat}#masthead-v5 .ali-logo-v5{float:left;margin-top:10px}#masthead-v5 .main-logo-v5{display:block;float:left;margin:7px 12px 0 0;padding:4px;border-radius:2px;text-decoration:none}#masthead-v5 .sub-logo-v5{font-family:"LanTing ZhongHei","Microsoft Yahei";display:block;float:left;padding-left:12px;height:58px;line-height:58px;background-image:none;font-size:22px;font-weight:400;color:#222}#masthead-v5 a.sub-logo-v5{text-decoration:none}#masthead-v5 a.sub-logo-v5:hover{color:#ff7300}#masthead-v5 .ali-search-v5{float:right;width:530px}#masthead-v5 legend{display:none}#masthead-v5 .alisearch-type-v5{height:21px;overflow:hidden}#masthead-v5 .alisearch-type-v5 li{float:left;width:54px;height:20px;line-height:1.5;border-top:solid 1px transparent;background-position:-160px -50px;text-align:center;cursor:pointer;_border-top-color:tomato;_filter:chroma(color=tomato);border:1px solid #FFF}#masthead-v5 .alisearch-type-v5 li.first{background:0 0;margin-left:-7px}#masthead-v5 .alisearch-type-v5 li.current{position:relative;border-bottom:0 none;font-weight:700;color:#FF7300}#masthead-v5 .alisearch-type-v5 li.current a{color:#FF7300;text-decoration:none}#masthead-v5 .alisearch-type-v5 a{color:#000;text-decoration:none}#masthead-v5 .alisearch-container-v5{padding-top:3px}#masthead-v5 .alisearch-container-v5:after{content:"\0020";display:block;height:0;clear:both}#masthead-v5 .alisearch-keywords-v5,#masthead-v5 .alisearch-category-v5,#masthead-v5 .alisearch-action-v5{float:left}#masthead-v5 .alisearch-keywords-v5{padding:0 4px;width:420px;height:30px;background-color:#fff;border:3px solid #FF7300;border-right:0}#masthead-v5 .alisearch-extend .alisearch-keywords-v5{width:318px}#masthead-v5 .alisearch-keywords-v5 input{position:relative;*top:3px;top:5px\0;background:#FFF;padding:2px 0;width:100%;height:24px;*height:18px;height:18px\0;line-height:1.5;overflow:hidden;border:0 none}#masthead-v5 .alisearch-keywords-v5 input:focus{outline:0}#masthead-v5 .alisearch-keywords-v5 input.empty{color:gray}#masthead-v5 .alisearch-category-v5{display:none}#masthead-v5 .alisearch-extend .alisearch-category-v5{display:block;border:3px solid #FF7300;border-left:0;border-right:0}#masthead-v5 .alisearch-action-v5 button{width:99px;height:36px;overflow:hidden;border:0 none;cursor:pointer;background-position:left -120px}#masthead-v5 .alisearch-action-v5 button.hover,#masthead-v5 .alisearch-action-v5 button:hover{background-position:left -120px}#masthead-v5 .alisearch-category-v5{position:relative;z-index:1011;cursor:default}#masthead-v5 .alisearch-category-v5 h3{padding:2px 22px 2px 8px;width:72px;height:26px;background-position:right -87px;background-color:#fff;line-height:26px}#masthead-v5 .category-hover h3{background-position:-59px -67px;width:71px;border:solid 1px #d1d1d1;border-bottom:none;padding:1px 22px 2px 7px}#masthead-v5 .alisearch-category-v5 ul{display:none;position:absolute;left:0;top:30px;min-width:100px;_width:100px;border:solid 1px #d1d1d1;border-top:0;background-color:#fff;line-height:26px}#masthead-v5 .category-hover ul{display:block}#masthead-v5 .alisearch-category-v5 li{padding:2px 8px;min-width:84px;_width:84px;height:26px}#masthead-v5 .alisearch-category-v5 li.hover,#masthead-v5 .alisearch-category-v5 li:hover{background-color:#ececec}#masthead-v5 .alisearch-category-v5 li.current{font-weight:700}#footer,#footer div,#footer p,#footer ul,#footer li,#footer dl,#footer dt,#footer dd{margin:0;padding:0}#footer ul{list-style:none}#footer a{font:12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;text-decoration:none}#footer{clear:both;text-align:center}#footer #footer-v0{font:12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;color:#999;min-width:952px;margin:0 auto;background-color:#fff;height:80px}#footer-v0 a:link,#footer-v0 a:visited{color:#333}#footer-v0 a:hover,#footer-v0 a:active{color:#ff7300!important;text-decoration:underline}#footer-v0 .footer-container{border-top:1px solid #e1e1e1}#footer-v0 p,#footer-v0 ul,#footer-v0 li,#footer-v0 dt,#footer-v0 dd{display:inline}#footer-v0 p{_padding-right:8px}#footer-v0 .ali-pages{padding:11px 0 9px}#footer-v0 li,#footer-v0 dd{padding-right:2px}#footer-v0 a{margin-right:1px}#footer-v0 .ali-pages p{padding-left:3px}#footer-v0 .ali-group dt{padding-left:4px}.sys-laiwang{display:none}.sys-laiwang-scan .box-wrap{position:fixed;_position:absolute;border:1px solid #eee;padding:4px;background:#fff;z-index:20}.sys-laiwang-scan .box-wrap .desc-panel{color:#f40;display:block;margin:0 0 4px 0;width:86px;text-align:center;white-space:normal;word-break:break-all}.sys-laiwang-scan .box-wrap a.close-btn{position:absolute;top:-1px;width:11px;height:11px;padding:4px;z-index:3;border:1px solid #eee;display:inline-block;text-decoration:none;background:#fff}.sys-laiwang-scan .box-wrap-right-mid{left:50%}.sys-laiwang-scan .box-wrap-left-mid{right:50%}.sys-laiwang-scan .box-wrap-right-side{right:18px}.sys-laiwang-scan .box-wrap-left-side{left:18px}.sys-laiwang-scan .box-wrap-right-mid a.close-btn,.sys-laiwang-scan .box-wrap-right-side a.close-btn{right:-21px}.sys-laiwang-scan .box-wrap-left-mid a.close-btn,.sys-laiwang-scan .box-wrap-left-side a.close-btn{left:-21px}.sys-laiwang-scan .box-wrap a.close-btn span{display:inline-block;width:11px;height:11px;line-height:0;font-size:0;float:left;cursor:pointer;background:url(http://cbu01.alicdn.com/cms/upload/2013/511/668/1866115_2091977944.png) no-repeat 0 0}.sys-laiwang-scan .box-wrap a.close-btn:hover{background:#f40;border:1px solid #f40}.sys-laiwang-scan .box-wrap a.close-btn:hover span{background-position:0 -11px;cursor:pointer}.sys-laiwang-scan .box-wrap .code-panel img{float:left}.unit-extra-info .table-list{background-color:#f5f5f5;width:100%;table-layout:fixed}.unit-extra-info .table-list td{border-top:1px dashed #e4e4e4}.unit-extra-info .table-list .td-ct{padding:12px 0;text-align:center}.unit-extra-info .col1{width:320px}.unit-extra-info .col1 .td-ct{padding-left:17px;text-align:left}.unit-extra-info .col2{width:134px}.unit-extra-info .col3{width:135px}.unit-extra-info .col5{width:125px}.unit-extra-info .col4 .td-ct{text-align:right;padding-right:24px}.unit-extra-info .table-list .row-first td{border-top:none}.unit-extra-info .table-list .cell-fix{border-left:1px solid #e4e4e4;vertical-align:top}.unit-extra-info .help-tip{background:url(http://cbu01.alicdn.com/cms/upload/2015/208/634/2436802_532208266.gif) no-repeat 0 0;width:16px;height:16px;overflow:hidden;cursor:help;display:inline-block;vertical-align:bottom;margin-left:5px}.mod-table{border:1px solid #dcdcdc;padding:0 1px}.mod-table table{width:100%;color:#333}.mod-table th,.mod-table th div{background:url(http://cbu01.alicdn.com/cms/upload/2012/683/072/270386_1070828466.png)}.mod-table th{font-weight:800;line-height:30px;height:31px;text-align:center;background-repeat:repeat-x;background-position:0 -600px;color:#666}.mod-table th div{background-repeat:no-repeat;background-position:0 -646px}.mod-table td{padding:8px 5px;vertical-align:top;overflow:hidden;border-bottom:1px solid #F2F2F2;background-color:#fff;line-height:22px;text-align:center}.trade-spec{color:#666}.trade-spec .spec-item{padding-right:14px}.trade-spec .spec-item-last{padding-right:0!important}.support-icon{padding:4px 0}.support-icon .icon-list{font-size:0}.support-icon .icon-item{margin-right:6px}.support-icon .icon-item img{float:none!important;margin:0!important;padding:0!important}.trade-icon-sample,.trade-icon-cod,.trade-icon-mix,.trade-icon-creditcard,.trade-icon-steppay,.trade-icon-huopin,.trade-icon-kuaiding,.trade-icon-safeguard,.trade-icon-credit-certi,.trade-icon-instantcredit,.trade-icon-accountperiod,.trade-icon-shoppingmall,.trade-icon-slsj,.trade-icon-moreless,.trade-icon-mybank,.trade-icon-lst,.trade-icon-saleproxy,.trade-icon-fastrefund,.trade-icon-shegou,.trade-icon-alibaba-send{display:inline-block;width:16px;height:16px;overflow:hidden;line-height:200px;vertical-align:middle;background-position:0 0;background-repeat:no-repeat}.trade-icon-sample-label,.trade-icon-cod-label,.trade-icon-mix-label,.trade-icon-creditcard-label,.trade-icon-steppay-label,.trade-icon-huopin-label,.trade-icon-kuaiding-label,.trade-icon-safeguard-label,.trade-icon-credit-certi-label,.trade-icon-instantcredit-label,.trade-icon-accountperiod-label,.trade-icon-shoppingmall-label,.trade-icon-slsj-label,.trade-icon-moreless-label,.trade-icon-mybank-label{line-height:12px;padding:2px 0 2px 20px;background-repeat:no-repeat;background-position:0 2px;*background-position:0 0}.trade-icon-sample,.trade-icon-sample-label{width:40px;background-image:url(http://cbu01.alicdn.com/cms/upload/2012/726/523/325627_1070828466.png)}.trade-icon-sample-label{width:auto;padding-left:40px}.trade-icon-cod,.trade-icon-cod-label{background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_cod.gif)}.trade-icon-cod-label{background-position:0 3px;*background-position:0 1px}.trade-icon-mix,.trade-icon-mix-label{width:35px;background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_mix.gif);background-position:0 1px}.trade-icon-mix-label{width:auto;padding-left:38px;background-position:0 4px;*background-position:0 1px}.trade-icon-creditcard,.trade-icon-creditcard-label{background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_creditcard.gif)}.trade-icon-creditcard-label{background-position:0 3px;*background-position:0 1px}.trade-icon-steppay,.trade-icon-steppay-label{background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_steppay.gif)}.trade-icon-huopin,.trade-icon-huopin-label{width:31px;background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_huopin.gif)}.trade-icon-huopin-label{width:auto;padding-left:35px}.trade-icon-kuaiding,.trade-icon-kuaiding-label{width:31px;background-image:url(http://cbu01.alicdn.com/cms/upload/2014/540/251/2152045_1148900260.jpg)}.trade-icon-kuaiding-label{width:auto;padding-left:35px}.trade-icon-safeguard,.trade-icon-safeguard-label{background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_safeguard_v2.gif)}.trade-icon-credit-certi,.trade-icon-credit-certi-label{width:47px;background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_credit_certi.gif)}.trade-icon-credit-certi-label{width:auto;padding-left:51px;background-position:0 3px;*background-position:0 1px}.trade-icon-instantcredit,.trade-icon-instantcredit-label{background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_instantcredit.gif)}.trade-icon-accountperiod,.trade-icon-accountperiod-label{width:47px;background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_accountperiod.gif)}.trade-icon-accountperiod-label{width:auto;padding-left:51px;background-position:0 3px;*background-position:0 1px}.trade-icon-shoppingmall,.trade-icon-shoppingmall-label{width:50px;background-image:url(http://cbu01.alicdn.com/cms/upload/2015/022/682/2286220_1956277063.gif)}.trade-icon-shoppingmall-label{width:auto;padding-left:54px;background-position:0 3px;*background-position:0 1px}.trade-icon-slsj,.trade-icon-slsj-label{width:52px;background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_slsj.gif)}.trade-icon-slsj-label{width:auto;padding-left:52px;background-position:0 3px;*background-position:0 1px}.trade-icon-moreless,.trade-icon-moreless-label{width:60px;background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_moreless.gif)}.trade-icon-moreless-label{width:auto;padding-left:64px;background-position:0 3px;*background-position:0 1px}.trade-icon-mybank,.trade-icon-mybank-label{width:16px;background-image:url(http://cbu01.alicdn.com/cms/upload/2015/100/284/2482001_1373486364.png)}.trade-icon-lst{width:70px;background-image:url(http://cbu01.alicdn.com/cms/upload/2015/525/315/2513525_1955610150.png)}.trade-icon-alibaba-send{width:54px;background-image:url(http://cbu01.alicdn.com/cms/upload/2016/005/195/2591500_810711316.png)}.trade-icon-saleproxy{width:27px;background-image:url(http://cbu01.alicdn.com/cms/upload/2016/263/855/2558362_532208266.png)}.trade-icon-shegou{background-image:url(http://cbu01.alicdn.com/cms/upload/2015/608/684/2486806_1955610150.png)}.trade-icon-fastrefund{width:70px;background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_fastrefund.gif)}.badge-credit-certi,.badge-safeguard,.badge-safeguard-label,.badge-cod,.badge-mixed{display:inline-block;height:16px;line-height:16px;overflow:hidden;vertical-align:middle;background:no-repeat left center;margin:0 2px;text-indent:-100px}.badge-credit-certi{width:47px;background-image:url(http://cbu01.alicdn.com/cms/upload/2013/105/404/1404501_1955610150.png);background-position:0 0}.badge-safeguard{width:16px;background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_safeguard_v2.gif);background-position:0 0}.badge-safeguard-label{background-image:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_safeguard_v2.gif);padding-left:20px;text-indent:0}.badge-cod{background-image:url(http://cbu01.alicdn.com/cms/upload/2013/218/847/748812_532208266.gif);width:16px}.badge-mixed{background-image:url(http://cbu01.alicdn.com/cms/upload/trade/just/badge-mix.png);background-position:0 0;width:37px}.mod-step-progress{width:328px;padding:0 30px;visibility:hidden}.mod-step-progress ul{display:block;height:50px;padding:0;margin:0;list-style-type:none}.mod-step-progress li{float:left;display:block;height:25px;clear:none!important}.mod-step-progress .sp-node,.mod-step-progress .sp-bar,.mod-step-progress .sp-grad{background:url(http://cbu01.alicdn.com/cms/upload/2012/351/413/314153_532208266.gif) no-repeat}.mod-step-progress .sp-node{width:23px;position:relative}.mod-step-progress .sp-s-a{background-position:0 -85px}.mod-step-progress .sp-s-b{background-position:0 0}.mod-step-progress .sp-s-d{background-position:0 -43px}.mod-step-progress .sp-e-a{background-position:-174px -43px}.mod-step-progress .sp-e-b{background-position:-174px 0}.mod-step-progress .sp-a{width:22px;background-position:-86px -43px}.mod-step-progress .sp-b{width:22px;background-position:-86px 0}.mod-step-progress .sp-d{width:22px;background-position:-86px -85px}.mod-step-progress .sp-bar{width:78px}.mod-step-progress .sp-bar-a{background-repeat:repeat-x;background-position:0 -138px}.mod-step-progress .sp-bar-b{background-repeat:repeat-x;background-position:0 -178px}.mod-step-progress .sp-bar-d{background-repeat:repeat-x;background-position:0 -138px}.mod-step-progress .sp-grad{display:none}.mod-step-progress .sp-bar-d .sp-grad{float:right;display:block;height:25px;width:78px;background-position:0 -219px}.mod-step-progress .sp-label{display:block;height:15px;width:120px;position:absolute;top:34px;left:-49px;white-space:nowrap;z-index:101;color:#666;text-align:center;font:12px/15px \5FAE\8F6F\96C5\9ED1,\5B8B\4F53,Tahoma,Arial,sans-serif}.mod-splash-dialog{padding:5px;background-color:#999;display:none}.mod-splash-dialog .content{padding:10px 20px;background-color:#fff}.mod-splash-dialog .msg-content{line-height:20px;padding:2px 0}.mod-splash-dialog .label-succes{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/43.png) no-repeat left center;padding-left:24px}.mod-splash-dialog .label-info{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/23.png) no-repeat left center;padding-left:24px}.mod-splash-dialog .label-error{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/53.png) no-repeat left center;padding-left:24px}.mod-splash-dialog .label-warn{background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/13.png) no-repeat left center;padding-left:24px}.clr{zoom:1}.clr:after{content:"\0020";display:block;height:0;clear:both}.ipt-text{background:url(http://cbu01.alicdn.com/images/trade/myalibaba/precharge/091123/txt-bg.png) no-repeat;padding:4px;border:1px solid #BBB}a.iconAlitalk,a.btnAlitalk{font-family:arial,helvetica,clean,sans-serif;font-size:12px;font-weight:400}a.iconAlitalk{color:#001d4c;background:url(http://cbu01.alicdn.com/images/fdevlib/contact-icon.gif) no-repeat;line-height:14px;padding:2px 0 2px 20px;_padding-top:3px;text-decoration:underline}a.iconAlitalk:link{text-decoration:underline}a.iconAlitalk:hover{color:#ff7300}a.icon-on{background-position:-190px -59px}a.icon-off{background-position:-190px -29px}a.icon-mb{background-position:-190px 1px}.red{color:red}.green{color:#090}.gray{color:#666}.bold{font-weight:700}.fs-12{font-size:12px}#hd{padding-top:8px;height:45px}#hd div{float:right;line-height:14px}#hd div span{padding:0 8px}#hd ul{float:left}.etcgongjian{vertical-align:-3px}.message{border:solid 1px #CEE2EC;background-color:#F3F8FB;margin-top:8px;padding:12px 20px;font-size:14px}.message a.arrow{padding-left:14px;background:url(http://cbu01.alicdn.com/images/trade/order/090922/sprite.png) no-repeat -162px -61px;text-decoration:underline;font-size:12px;line-height:32px}.message table{table-layout:fixed;width:100%}.message table th{width:100px;text-align:right;font-weight:400;line-height:22px;vertical-align:top}.message table td{line-height:22px;overflow:hidden}.message td span{display:inline-block\9;word-break:break-all;word-wrap:break-word}.message .warn{padding-left:15px;background:url(http://cbu01.alicdn.com/images/common/icon_v02/warn7.png) no-repeat left 3px;font-size:12px}.message .warn em{color:#FF7300;font-weight:700}.message .split{margin:6px 0;background:url(http://cbu01.alicdn.com/images/common/icon_v02/split1.gif) repeat-x;height:2px;overflow:hidden}.message .memo{font-size:12px;word-break:break-all;word-wrap:break-word}.message pre{white-space:pre-wrap;*white-space:pre;*word-wrap:break-word}.add-message-links span{cursor:pointer;color:#06c}.add-message-unlink,.add-message-show .add-message-link{display:none}.add-message-show .add-message-unlink{display:inline-block}.add-message-box{display:none;float:left;width:540px;margin-top:16px;color:#333}.add-message-box textarea{width:476px;height:108px;vertical-align:top}.add-message-box .add-message-result{margin-top:6px}.add-message-box .add-message-result .add-message-submit{float:right}.add-message-box .add-message-result .l{float:right;margin-right:10px;color:#666}.add-message-box .add-message-result .l em{color:#FF7300}.add-message-box .add-message-result .n{display:none;float:left;margin-left:60px;padding-left:16px;background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/14.png) no-repeat 0 6px;color:#E42A2A;line-height:21px}.tab-panel{margin-top:30px}.tab-panel .tab-context{border:1px solid #CAE1FE;padding:12px 24px}.tab-panel h3{font-size:14px;font-weight:700;line-height:24px;color:#000}.tab-panel .seller{table-layout:fixed;width:100%;color:#5E5E5E;line-height:2}.tab-panel .seller th{width:100px;text-align:right;font-weight:400}.tab-panel .seller td{width:357px;overflow:hidden}.tab-panel .tab-header{position:relative}.tab-panel .tab-header .panel{position:absolute;right:10px;top:4px}.tab-panel .deal-wrap{margin-top:8px;border:1px solid #E3D5C4}.tab-panel .deal-wrap table{table-layout:fixed;width:100%;border-collapse:collapse}.tab-panel .deal th{height:40px;vertical-align:middle;line-height:14px;padding:0 8px;text-align:center;border-bottom:1px solid #E9E9E9;border-top:1px solid #E9E9E9;background:url(http://cbu01.alicdn.com/images/trade/myalibaba/precharge/091123/bg1.png) repeat-x;font-weight:400}.tab-panel .deal td{text-align:center;vertical-align:top;overflow:hidden}.tab-panel .deal table td{border-bottom:1px solid #E9E9E9;padding:8px}.tab-panel .deal .col0{width:20px}.tab-panel .deal .vmiddle{vertical-align:middle}.tab-panel .deal .col1{width:64px}.tab-panel .deal .col2{width:182px}.tab-panel .deal .col3{width:80px}.tab-panel .deal .col4{width:80px}.tab-panel .deal .col8{width:80px}.tab-panel .deal td.col2{text-align:left}.tab-panel .deal td.col5,.tab-panel .deal td.col6,.tab-panel .deal td.col7,.tab-panel .deal td.col10{padding:8px;border-bottom:1px solid #E9E9E9;width:100px}.tab-panel .deal td.col9{padding:8px;border-bottom:1px solid #E9E9E9;width:80px}.tab-panel .deal td.col1{text-align:left}.tab-panel .deal td.col5,.tab-panel .deal td.col6,.tab-panel .deal td.col7{border-left:1px solid #E9E9E9}.tab-panel .total{line-height:24px;text-align:right;padding:0 12px;position:relative}.tab-panel .total .terror{position:absolute;left:0;top:8px;margin-left:4px;padding-left:16px;color:red;line-height:16px;background:url(http://cbu01.alicdn.com/cms/upload/2010/710/300/3017_548721671.gif) 0 -58px no-repeat}.tab-panel .total em,.tab-panel .total i{font-weight:700;margin:0 4px;font-style:normal}.tab-panel .split{margin-top:16px;height:1px;overflow:hidden;border-bottom:1px solid #cacaca;font-size:1px}.tab-panel .box{padding:8px;line-height:2}.tab-panel .box p{padding-left:24px;word-break:break-all;word-wrap:break-word}.tab-panel .box pre{white-space:pre-wrap;Word-wrap:break-word}.tab-panel .box table{table-layout:fixed;width:100%}.tab-panel .box th{width:120px;text-align:right;font-weight:400;vertical-align:top}.tab-panel .box td{word-wrap:break-word;word-break:break-all}.tab-panel .box .first th,.tab-panel .box .first td{border-top:0}.tab-panel .recieve p{color:#000}.tab-panel .recieve span.warn{background:url(http://cbu01.alicdn.com/images/trade/myalibaba/precharge/091123/tip.png) no-repeat;padding:2px 0 2px 20px;color:#FF7300;font-weight:700}.tab-panel .recieve .comit{padding:8px 0 0 198px}.tab-panel .recieve .comit input{border:0;width:114px;height:28px;line-height:1;text-align:center;font-size:14px;background:url(http://cbu01.alicdn.com/images/trade/myalibaba/precharge/091123/button114-28.png) no-repeat}.guarantee-icons{margin:8px 0;padding-left:4px}.guarantee-card{background:url(http://cbu01.alicdn.com/cms/upload/2012/334/172/271433_1070828466.png) no-repeat scroll 0 0 transparent;display:inline-block;*display:block;height:16px;overflow:hidden;text-indent:-200em;width:60px}.tab-panel .pay-detail-list .sp{font-weight:400;margin:0 4px;color:#666}.tab-panel .pay-detail-list th{font-weight:800;text-align:center}.tab-panel .pay-detail-list td{text-align:center}.tab-panel .pay-detail-list td.c-left{text-align:left}.tab-panel .pay-detail-list .c1{width:51px}.tab-panel .pay-detail-list .c2{width:84px}.tab-panel .pay-detail-list td.c2{padding-left:15px;padding-right:15px}.tab-panel .pay-detail-list .c3{width:84px}.tab-panel .pay-detail-list .c4{width:166px}.tab-panel .pay-detail-list .c5{width:166px}.tab-panel .pay-detail-list .c6{width:102px}.tab-panel .pay-detail-list .c7{width:102px}.tab-panel .pay-detail-list .c8{width:140px}.tab-panel .pay-detail-list .note{color:#999}.edit{background-color:#FFF;border:1px solid #FF7300;border-top-width:3px;line-height:20px}.edit table{table-layout:fixed;border-collapse:collapse;width:800px}.edit th,.edit td{border-left:1px solid #FFF;text-align:center;vertical-align:top;overflow:hidden}.edit th.c1,.edit td.c1{border-left:0}.edit th{padding:2px 0;color:#000;background-color:#F6E7DB;font-weight:700}.edit td{padding:4px 2px}.edit input{border:1px solid #A7A6AA;background-position:0 -90px;padding:2px;width:90px;margin-right:4px}.edit .c1{width:116px}.edit .c2{width:156px}.edit .c3{width:156px}.edit .c4{width:148px}.edit .c5{width:106px;vertical-align:middle}.edit .c1 div{width:116px;overflow:hidden}.edit .c5 a.left{background-position:-230px -100px;padding:3px 17px 4px;color:#FFF;font-weight:700;text-decoration:none}.edit .c5 a.left{color:#000;background:url(http://cbu01.alicdn.com/images/trade/myalibaba/precharge/091123/btn-silver1.png) no-repeat;padding:5px 16px 6px;text-decoration:none}.edit .c5 a.left:hover{text-decoration:underline}.edit .c5 a.right{padding-left:4px;text-decoration:underline}.edit .tip{color:#8C8C8C}.edit .c2 .tip,.edit .c3 .tip{padding-right:16px}.edit .c4 .total{font-weight:700;color:#FF5600}.edit .err{background-position:0 -208px;padding-left:20px;color:#C00;text-align:left}.delay{background-color:#FFF;border:1px solid #FF7300}.footer li{*line-height:14px}.msg-tuanpi em{font-weight:700;color:#F60}.fd-right{float:right}.btn-a2{display:block;float:left;overflow:hidden;height:22px;text-decoration:none!important}.btn-a2 span{display:block;float:left;height:22px;background:url(http://cbu01.alicdn.com/images/trade/quotation/100426/btn1.png) no-repeat;cursor:pointer}.btn-a2 .btn-l{padding-left:2px;background-position:left top}.btn-a2 .btn-r{width:2px;background-position:right top}.btn-a2 em{padding:0 8px;font:400 12px/20px \5B8B\4F53;color:#333!important}.btn-a2:hover .btn-l{background-position:left -22px}.btn-a2:hover .btn-r{background-position:right -22px}#modComment .comment1{background:url(http://cbu01.alicdn.com/cms/upload/2012/597/213/312795_408548589.png) no-repeat 0 -100px;*padding-top:0}#modComment .comment2{background:url(http://cbu01.alicdn.com/cms/upload/2012/597/213/312795_408548589.png) no-repeat 0 -150px;*padding-top:0}#modComment .comment3{background:url(http://cbu01.alicdn.com/cms/upload/2012/597/213/312795_408548589.png) no-repeat 0 -200px;*padding-top:0}#modComment .comment4{background:url(http://cbu01.alicdn.com/cms/upload/2012/597/213/312795_408548589.png) no-repeat 0 -250px;*padding-top:0}.modal{border:solid 8px #585858;background-color:#FFF;font-family:\5B8B\4F53;line-height:1.5}.modal h3{margin:0;padding:0 8px!important;height:35px;border-bottom:solid 1px #C1D2E6;background:url(http://cbu01.alicdn.com/images/trade/quotation/100426/bg6.gif) repeat-x;line-height:2.5}.modal h3 em{display:block;float:left;font-size:14px;font-weight:700;color:#06C}.modal h3 .close{display:block;float:right;margin-top:7px;width:21px;height:22px;overflow:hidden;background:url(http://cbu01.alicdn.com/images/trade/quotation/100426/close1.png) no-repeat;cursor:pointer}#modComment{width:430px}#modComment label{padding:2px 4px 2px 20px;zoom:1}#modComment .box{padding:16px 32px}#modComment table{table-layout:fixed;width:100%}#modComment th{width:70px;text-align:right;vertical-align:top;font-weight:700;color:#2A2A2A}#modComment td div{position:relative}#modComment td .err{position:absolute;top:110px;left:0;padding:0 4px 0 18px;background:#FFF8EE url(http://cbu01.alicdn.com/images/common/icon_v02/warn7.png) no-repeat 4px 4px;border:1px solid #FFA29A;color:#FD463B;line-height:22px;white-space:nowrap;z-index:1}#modComment textarea{width:286px;height:100px}#modComment .actions{height:22px}#modComment .btn-a2{float:left}#modComment .confirm{margin-right:16px}#pop-iframe{width:916px}.message a.pay,.message a.bind,.message a.send,.message a.recieve,.message a.modify,.message .confirm,.message .confirm-fund,.message .confirm-order{display:inline-block;height:25px;overflow:hidden;line-height:24px;background:url(http://cbu01.alicdn.com/images/trade/order/090922/sprite.png) no-repeat;padding-left:21px;margin:5px 5px 5px 0;color:#fff;text-decoration:none;font-weight:700;font-size:12px;vertical-align:middle}.message a.pay,.message a.bind,.message a.send{background-position:-40px -100px;width:50px}.message a.pay:hover,.message a.bind:hover,.message a.send:hover{background-position:-40px -140px}.message a.pay:active,.message a.bind:active,.message a.send:active{background-position:-40px -180px}.message a.recieve{background-position:-120px -100px;width:69px}.message a.recieve:hover{background-position:-120px -140px}.message a.recieve:active{background-position:-120px -180px}.message a.modify{background-position:-123px -295px;width:89px}.message a.modify:hover{background-position:-123px -335px}.message a.modify:active{background-position:-123px -375px}.message a.confirm,.message a.confirm-fund,.message a.confirm-order{background-position:0 -295px;width:63px}.message a.confirm:hover,.message a.confirm-fund:hover,.message a.confirm-order:hover{background-position:0 -335px}.message a.confirm:active,.message a.confirm-fund:active,.message a.confirm-order:active{background-position:0 -375px}.message .delay-infos{margin-top:16px;padding-left:16px;font-size:12px;color:#999}.message .delay-infos h5{margin-bottom:4px;color:#666}.mod-print-btn{text-align:center;padding:24px 0;background:none repeat scroll 0 0 #FAF6F1;border:1px solid #ACB1BA;border-top:none;margin:0 auto}.sample-icon{display:inline-block;height:16px;width:38px;vertical-align:middle;margin-bottom:4px;background:url(http://cbu01.alicdn.com/cms/upload/2012/726/523/325627_1070828466.png) no-repeat}#pop-iframe{display:none}#rdjs .btmline{padding-bottom:8px;margin-bottom:6px;background:url(http://cbu01.alicdn.com/images/common/icon_v02/split1.gif) left bottom repeat-x}#modGuardProxy,#modGuardDelay{width:616px}#modConfirmFund{width:466px}#modGuardProxy .box,#modGuardDelay .box,#modConfirmFund .box{padding:8px}.top-tips{line-height:20px;background:url(http://cbu01.alicdn.com/images/common/icon_v02/caution1.gif) no-repeat 0 6px;padding:4px 20px;color:#FF7300;font-weight:700}.f-ui-placeholder{color:#999}.mod-detail .tab-context{border-top:none;border-color:#acb1ba;border-bottom:none;background:#fff}.mod-detail .unit-tabs li.current{border-top-color:#acb1ba!important;border-right-color:#acb1ba!important;border-bottom-color:#fff;border-left:1px solid #acb1ba!important;margin-left:-1px!important}.mod-detail .unit-tabs li.current .tab-option{background:#fff!important;font-weight:700!important;font-size:14px!important}.zone-user{padding-bottom:20px}.zone-user .order-buyer-info{float:left;width:410px}.zone-user .order-seller-info{float:right;width:410px}.zone-user .order-buyer-info,.zone-user .order-seller-info{margin:20px 0 0 12px}.zone-user .order-buyer-info ul,.zone-user .order-seller-info ul{line-height:2}.mod-detail .tab-context .buyer-messages-detail{line-height:18px;color:#666;padding-top:4px}.mod-detail .tab-context .buyer-messages-add{line-height:18px;color:#666}.mod-detail .tab-context .icon-phone-order{display:inline-block;vertical-align:middle;margin-bottom:6px;margin-top:1px;margin-left:5px;width:48px;height:16px;background:url(http://cbu01.alicdn.com/cms/upload/2013/679/205/502976_651724968.gif) no-repeat}.mod-detail .tab-context .ie-trustpic-lineheight img{margin-top:3px;margin-bottom:4px;vertical-align:middle}.mod-detail .tab-context .ie-wangwang-lineheight{margin-bottom:2px;margin-top:2px}.buyer .mod-detail .add-message-box{width:565px}.buyer .mod-detail .add-message-box textarea{width:500px;height:110px;vertical-align:top}.mod-detail .add-message-box .add-message-result .button{height:24px}.zone-invoice h3{margin-left:8px}.mod-detail .zone-order .col-goods{width:320px}.mod-detail .zone-order .col-total{width:124px}.mod-detail .zone-order .col-status{width:90px}.zone-invoice .box-invoice{padding:16px 0 50px;color:#444;line-height:24px}.zone-invoice ul{margin:4px 0 0 3px}.zone-invoice li{padding:0 5px}.zone-invoice li.box-striking{padding-left:4px}.zone-order thead{height:30px;line-height:30px}.zone-order thead th{font-weight:400;background:#faf6f1;color:#666;text-align:center}.zone-order .item td{padding:16px 0 12px;border-bottom:1px dotted #cacaca;text-align:center}.zone-order .item.last-item td{border-bottom:none}.zone-order .cell-thumbnail{width:308px;padding-left:12px}.zone-order .cell-thumbnail dt{width:64px;height:64px;margin-right:12px}.zone-order .cell-thumbnail .description a:link,.zone-order .cell-thumbnail .description a:visited{color:#333}.zone-order .cell-thumbnail .sku{color:#999}.zone-order .cell-thumbnail .sku-item{padding-right:12px}.zone-order .cell-thumbnail .offer-product-number{word-break:break-all;word-wrap:break-word}.zone-order .cell-thumbnail .offer-product-number .name{white-space:nowrap}.zone-order .cell-thumbnail .offer-product-number .value{font-weight:700}.mod-detail .trade-spec .sku-item{color:#999}.mod-detail .zone-order .total-money-td{border-bottom:none}.mod-detail .zone-order .status-td{border-right:1px dotted #cacaca}.mod-detail .zone-order .item td.order-detail,.mod-detail .zone-order thead th.order-detail{text-align:left}.mod-detail .zone-order .order-detail .order-img{margin-left:30px}.mod-detail .tab-context.logistics-tab{padding:20px 24px 0 16px}.mod-detail .tab-context.logistics-tab .box{padding:0}.mod-detail .real-pay{font-size:16px}.mod-detail .money{padding-top:8px;padding-bottom:10px}.mod-detail .money .total-normal{padding-top:5px}.mod-detail .money .total-last{padding-top:10px}.mod-detail .no-tip{padding-bottom:280px}.unit-customize-info{padding:12px;text-align:left}.unit-customize-info .main-content{background-color:#F7F7F7;position:relative;word-wrap:break-word}.unit-customize-info .min-height{width:1px;height:70px;overflow:hidden;float:left}.unit-customize-info .tag-img{display:inline;float:left;font-weight:700;margin:0 auto;padding-top:18px;text-align:center;width:76px}.unit-customize-info .item-list-ct{width:800px;float:left;padding:17px 0}.unit-customize-info .item-list li{display:inline;line-height:20px}.unit-customize-info .item-list .sep{padding:0 10px;color:#666}.unit-customize-info .item-list .item-hd{color:#999}.mod-print{position:relative}.mod-print .content{position:absolute;top:36px;left:789px;width:200px}.mod-print a{float:right;padding:0 0 0 20px;background:url(http://cbu01.alicdn.com/cms/upload/2010/340/300/3043_2091977944.png) no-repeat -9999px -9999px}.mod-print a:link,.mod-print a:visited{background-position:0 -52px!important;color:#06C;text-decoration:none}.mod-print a:hover{color:#ff7300}.mod-print .print-detail{margin-left:8px}.tab-panel .seller td.payto-buyer{height:40px;line-height:1.5}.payto-buyer .fd-locate{height:40px}.payto-buyer .unit-striptip{position:absolute;top:4px}.payto-buyer .unit-striptip .main{white-space:nowrap;padding-left:18px;background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/24.png) no-repeat 0 3px}.tab-panel .icon-cod{margin-left:5px;padding:2px 0 2px 22px;line-height:16px;background:url(http://cbu01.alicdn.com/cms/upload/2013/218/847/748812_532208266.gif) no-repeat 0 3px;*background-position:0 1px}.mod-detail .total-commission-rebate{padding-top:10px}.mod-detail .total-commission-rebate .sep-top{border-top:1px dashed #999;padding:8px 0 5px 12px}.mod-detail .icon-rebates{display:inline-block;width:27px;height:16px;overflow:hidden;line-height:200px;vertical-align:middle;background:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_rebates.gif) no-repeat 0 0;padding-right:5px}.td-extra-mark-info{padding:0!important}.offer-list-detail .list-header{text-align:center;position:relative}.offer-list-detail .operate{position:relative;display:block;margin:0 auto -1px;height:26px;line-height:26px;cursor:pointer;padding:0 10px 0 0;background-color:#fff;width:100px}.offer-list-detail .operate-arrow{border:1px solid #E3D5C4;background:url(http://cbu01.alicdn.com/cms/upload/2013/604/919/919406_1452768260.png) no-repeat scroll 92px 11px}.offer-list-detail.unfold .operate-arrow{border:1px solid #E3D5C4;border-bottom:1px solid #fff;background:url(http://cbu01.alicdn.com/cms/upload/2013/604/919/919406_1452768260.png) no-repeat scroll 92px -35px}.offer-list-detail .list-table{border-top:1px solid #E3D5C4;padding:24px 0 28px;display:none}.offer-list-detail.unfold .list-table{display:block}.offer-list-detail .list-table table{border-collapse:separate;table-layout:fixed;border:1px solid #E3D5C4;border-right:none;border-bottom:none;width:800px;margin-left:70px}.offer-list-detail .list-table .goods-col{width:480px}.offer-list-detail .list-table .price-col{width:159px}.offer-list-detail tr{height:31px;line-height:31px}.offer-list-detail th{padding:0;background:none repeat scroll 0 0 #FAF6F1;border-right:1px solid #E3D5C4;border-bottom:1px solid #E3D5C4;font-weight:400;text-align:center}.offer-list-detail td{padding:0}.offer-list-detail .list-table .detail-name{margin-left:18px}.offer-list-detail td{background:none repeat scroll 0 0 #FFF;border-right:1px solid #E3D5C4;border-bottom:1px solid #E3D5C4;overflow:hidden;text-align:center}.offer-list-detail .list-table .subject{width:480px;text-align:left}.offer-list-detail .price{width:159px}.orange-v2{color:#FF7300}.logistics-detail .cell-count-info{line-height:32px}.logistics-detail .cell-count-info li{width:898px;overflow:hidden;display:block;clear:both}.logistics-detail .last-list{border:none}.logistics-detail .cell-detail-list .left-title,.logistics-detail .cell-detail-list .right-con{float:left}.logistics-detail .cell-detail-list .right-con span{display:block}.logistics-detail .cell-detail-list li{zoom:1}.logistics-detail .cell-detail-list li:after{clear:both;content:"\0020";display:block;height:0}.logistics-detail .cell-detail-list .right-con{overflow:hidden;white-space:normal;word-break:break-all;word-wrap:break-word}.logistics-detail .cell-detail-list .logistics-max-width{width:860px}.logistics-detail .cell-detail-list .right-con p{padding:0!important}.logistics-detail .cell-detail-list .right-con .l-time{margin:0 4px 0 0}.logistics-detail .cell-detail-list .hide-anchor{text-indent:-9999;text-decoration:none;outline:#fff}.logistics-detail .cell-detail-list th{background:url(http://cbu01.alicdn.com/cms/upload/2010/921/200/2129_2091977944.png) -9999px -9999px}.logistics-detail .cell-detail-list .list-t th span{width:99.5%;text-align:center;display:inline-block;margin:8px 0;line-height:14px;border-right:1px solid #e3e3ea}.logistics-detail .cell-detail-list .list-t .title{border:none 0}.logistics-detail .cell-detail-list .list-t .last-t span{border:none 0}.logistics-detail .cell-detail-list .list-t td{padding:8px 4px;vertical-align:top;height:64px}.logistics-detail .cell-detail-list .list-t td .img{display:inline-block;width:64px;height:64px}.logistics-detail .cell-detail-list .last-tr td{border-bottom:1px solid #e3e3e3}.logistics-detail .cell-detail-list th{background-position:-4px 0}.logistics-detail .cell-detail-list .first-t{background-position:0 0!important}.logistics-detail .cell-detail-list .last-t{background-position:right 0!important}.logistics-detail .cell-detail-list strong{font-weight:700}.logistics-detail .cell-detail-list .trade-spec{line-height:1.5}.logistics-detail .cell-detail-list .trade-spec .spec-item{display:inline}.logistics-detail .logistics-number{position:relative}.logistics-detail .logistics-mark,.logistics-detail .logistics-tips-top{background:url(http://cbu01.alicdn.com/cms/upload/2012/943/382/283349_1070828466.png) 0 6px no-repeat}.logistics-detail .logistics-mark{display:inline-block;width:15px;height:18px;margin:0 4px;cursor:pointer}.logistics-detail .logistics-number .logistics-tips-top{display:none;position:absolute;left:116px;top:14px;*top:20px;width:25px;height:15px;background-position:0 -50px;z-index:102}.logistics-detail .logistics-number .logistics-tips{display:none;position:absolute;left:106px;top:20px;*top:26px;width:254px;padding:4px 8px;font-style:normal;font-weight:400;background-color:#fffbee;border:1px solid #ffe0c5;z-index:101}.f-step{padding:28px 22px 20px!important;display:none}.logistics-detail .gray-dark{margin-bottom:6px;color:#FF7300}.zone-logistics thead{height:30px;line-height:30px}.zone-logistics thead th{font-weight:400;background:#faf6f1;color:#666;text-align:center}.zone-logistics .item td{padding:16px 0;border-bottom:1px dotted #cacaca;text-align:left}.zone-logistics .item.last-tr td{border-bottom:none}.zone-logistics .col-goods{width:405px}.zone-logistics .col-weight{width:400px}.zone-logistics .col-none{padding-left:130px}.zone-logistics .cell-thumbnail dt{width:64px;height:64px;margin:0 12px}.zone-logistics .cell-thumbnail .description a:link,.zone-logistics .cell-thumbnail .description a:visited{color:#333}.zone-logistics .cell-thumbnail .sku{color:#999}.zone-logistics .cell-thumbnail .sku-item{padding-right:12px}.logistics-detail div.offer-list{border:1px solid #E3D5C4}.logistics-detail .right-con table{table-layout:fixed;width:100%;border-collapse:collapse}.mod-detail .logistics-tab .cell-detail-list li{padding-top:1px}.mod-detail .logistics-tab .cell-detail-list div.contain-title{padding-top:13px;padding-bottom:7px}.mod-detail .logistics-tab .order-detail{padding:0 0 50px 20px}.mod-detail .order-detail li strong{font:12px/2 Tahoma,Arial,"宋体",sans-serif}.mod-detail .order-detail ul{padding-top:10px}.mod-detail .title-status span{padding-left:5px}.mod-detail .box .logistics-title{background:none repeat scroll 0 0 #FF7300;color:#FFF;text-align:center;width:85px;float:left;padding:6px 0;line-height:1.5;position:relative}.mod-detail .box .logistics-title .shadow{position:absolute;height:10px;top:30px;left:0;width:85px;background:url(http://cbu01.alicdn.com/cms/upload/2012/209/854/458902_532208266.png) no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=//cbu01.alicdn.com/cms/upload/2012/209/854/458902_532208266.png);_background:0 0}.mod-detail .box .title-status{background-color:#FAF6F1;padding:6px;line-height:1.5}.mod-detail .box .title-status .orange{color:#444}.mod-detail .order-detail .contain-title{padding-top:12px;padding-bottom:5px}.mod-detail .order-detail .weight-left{padding-left:130px}.mod-detail .cell-detail-list .logistic-number-margin{margin-left:-3px}.mod-detail .box .cod-title{float:left;line-height:1.5;padding:6px 14px 6px 30px;color:#fff;background:#b7b7b7 url(http://cbu01.alicdn.com/cms/upload/2013/218/847/748812_532208266.gif) no-repeat 8px center}.bao:link,.bao:visited{display:block;background:url(http://cbu01.alicdn.com/images/myalibaba/integrity/insearch/ic-1.gif) no-repeat;padding-left:19px;color:#002b91;text-decoration:none}.tmdbao{margin-top:5px;margin-left:5px;width:36px;height:43px;display:block}.ld-1{overflow:hidden;width:198px;height:160px;background:url(http://cbu01.alicdn.com/images/myalibaba/integrity/searchlist/d-2.gif);line-height:1.5;text-align:left;color:#737373;margin-bottom:8px}.ld-1 a:link,.ld-1 a:visited{text-decoration:none;color:#195cad}.ld-1 a:hover{color:#ff7300;text-decoration:underline}.ld-1 .txt{width:153px;height:74px;margin-top:16px;margin-left:27px;text-indent:20px}.ld-1 .mny{margin-left:17px;margin-top:8px}.mod-status .status-name{font-size:14px;line-height:3}.mod-status .status-name .status-name-item{line-height:16px;padding:12px 0 7px}.mod-status .status-name .label,.mod-status .status-name .name{font-weight:700}.mod-status .close-reason{padding-bottom:8px}.mod-status .close-reason .reason{display:inline-block;width:800px;vertical-align:top}.mod-status .action-branch,.mod-status .list-items{line-height:22px;list-style:decimal inside none}.mod-status .memo{padding:13px 0 0 16px}.mod-status .button-memo{width:36px}.mod-status .countdown-tip{border:1px solid #e7d3ac;margin:8px 0 0 8px;font-size:12px;height:25px;line-height:25px;padding:0 7px 0 30px;background:#fffbdd url(http://cbu01.alicdn.com/cms/upload/2012/392/093/390293_1955610150.png) no-repeat 5px 3px}.mod-status .false-trading .list-outline{margin-top:8px}.mod-status .extend-time{color:#999;position:relative;margin-bottom:22px}.mod-status .rest-arrow{float:left;width:12px;height:18px;background:url(http://cbu01.alicdn.com/cms/upload/2012/366/364/463663_532208266.gif) no-repeat -89px 1px;padding-left:2px}.mod-status{background:#faf6f1;border:1px solid #acb1ba;margin-top:0;font-size:12px}.mod-status div.status{padding:21px 20px 38px 57px}.mod-status .status .order-info{font-size:12px}.mod-status .status .order-memo{padding-left:18px;margin-top:0;line-height:15px}.mod-status .status .action-branch li{line-height:26px}.mod-status .status .status-name{padding-bottom:4px}.mod-status .status .memo-property p{display:inline}.mod-status .status .memo-property{display:inline;padding-left:0}.mod-status .status .memo-property .memo-hidden{display:none}.mod-crumbs-progress{border:1px solid #ACB1BA;border-bottom:none;text-align:center;height:108px;background-color:#fff}.mod-crumbs-progress .make-stage-crumb{margin:0 auto;width:620px;margin-top:20px}.mod-crumbs-progress .make-stage-crumb .stage-bar-current .stage-arrow-order{background:url(http://cbu01.alicdn.com/cms/upload/2012/892/854/458298_532208266.gif) no-repeat scroll 0 0 transparent;width:20px;height:14px;overflow:hidden;top:54px;left:73px;position:absolute}.mod-crumbs-progress .make-stage-crumb .stage-last-pass .stage-arrow-order,.mod-crumbs-progress .make-stage-crumb .stage-current .stage-arrow-order{background:url(http://cbu01.alicdn.com/cms/upload/2012/892/854/458298_532208266.gif) no-repeat scroll 0 0 transparent;width:20px;height:14px;overflow:hidden;top:54px;left:3px;position:absolute}.mod-crumbs-progress .make-stage-crumb .stage-bar{position:relative}.mod-status .status-colse .order-memo{padding-left:0!important;margin-top:4px!important}.mod-status .unit-bubbletip .bubble{right:24px;left:auto!important}.mod-status .status .memo-seller{display:block;padding-bottom:8px}.mod-status .actions a{margin-right:4px}.mod-status .false-trading .addit{font-size:12px;margin-left:10px}.mod-status .status .memo-seller pre{padding-left:0}.mod-status .title-cod-float-icon{position:relative;float:left}.mod-status .title-cod-float-icon i{position:absolute;display:block;left:-24px;top:14px;width:16px;height:16px;overflow:hidden;font-size:0;background:url(http://cbu01.alicdn.com/cms/upload/2013/218/847/748812_532208266.gif) no-repeat 0 0}.mod-status .warn-section{font-size:14px;font-weight:700;padding:5px 10px 5px 20px;color:red;background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/13.png) no-repeat 0 8px}.mod-status .icon-accountperiod{display:inline-block;width:16px;height:16px;overflow:hidden;line-height:48px;background:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_instantcredit.gif) no-repeat 0 0;vertical-align:middle;margin-right:2px}.mod-status .icon-accountperiod,.mod-status .icon-accountperiod-chupiao,.mod-status .icon-accountperiod-beishu{display:inline-block;*display:inline;zoom:1;vertical-align:middle}.mod-status .icon-accountperiod{width:47px;height:16px;background:url(http://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_accountperiod.gif) no-repeat 0 0}.mod-status .icon-accountperiod-beishu{width:47px;height:16px;background:url(http://cbu01.alicdn.com/cms/upload/2016/302/796/2697203_1373486364.png) no-repeat 0 0}.mod-status .icon-accountperiod-chupiao{width:47px;height:16px;background:url(http://cbu01.alicdn.com/cms/upload/2016/981/886/2688189_1373486364.pngg) no-repeat 0 0}.mod-status .icon-mybank{width:73px;height:21px;background:url(http://cbu01.alicdn.com/cms/upload/2015/832/534/2435238_1373486364.png) no-repeat 0 0;display:inline-block;vertical-align:bottom}.mod-status .icon-back-common{background-color:#4c7cc8;color:#fff;padding:0 3px;line-height:16px}/*!
+ * 订单详情 - 额外的代码
+ * @author Edgar
+ * @build 121128
+ * */.layer-main{border-top-color:#ff7300;padding:30px 0 64px;background-image:url(http://cbu01.alicdn.com/cms/upload/2012/156/274/472651_532208266.png);background-repeat:repeat-x}#doc .tip-dropdown-arrow{padding-right:10px;cursor:pointer;background:url(http://cbu01.alicdn.com/cms/upload/2012/034/454/454430_532208266.gif) no-repeat right center}#doc .tip-gray{color:#666}.material-protect-state .content{border-top:1px dotted #ACB1BA;font-size:12px;padding:21px 20px 26px 57px;background-color:#FAF6F1}.material-protect-state .title{font-size:14px;font-weight:700;float:left}.material-protect-state .offer-title{display:inline-block;float:left;width:210px;margin:2px 10px 0 0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.material-protect-state dd{margin-left:100px;margin-top:6px}.material-protect-state .status{font-size:14px;font-weight:700}.material-protect-state .unit-striptip.error-tip{margin-top:30px}.mod-extended-time-dialog{display:block;width:380px}.mod-extended-time-dialog .info{padding:8px 5px}.mod-extended-time-dialog .extend-days-list{padding:8px 5px 0}.mod-extended-time-dialog .etd-container{padding-bottom:14px}.mod-extended-time-dialog .extend-days-list li{float:left;padding:0 22px 8px 0;white-space:nowrap}.mod-extended-time-dialog .extend-days-list label{padding-left:8px}.mod-extended-time-dialog .errors-info{position:relative;padding:0 5px}.mod-extended-time-dialog .extended-time-dlg-tip{position:absolute;left:0;top:0;padding-left:20px;color:red;background:url(http://cbu01.alicdn.com/images/common/icon_v04/png8/14.png) no-repeat 2px 4px}.mod-extend-account-period-dialog{display:none;width:360px}.mod-extend-account-period-dialog .container p{border:1px solid #eacea7;background-color:#ffffe5;padding:8px;margin-bottom:12px}.mod-extend-account-period-dialog .container input{width:30px;text-align:center}.mod-extend-account-period-dialog .container .errmsg{margin-left:10px;color:red}.mod-extend-account-period-dialog .container .jiesuanri{margin-left:96px;margin-top:3px}.mod-extend-account-period-dialog .container .jiesuanri i{font-style:normal;color:#cf793c}
+        #masthead-v4 .sub-logo-v4 { background-image: none; }
+        #masthead-v4 .sub-logo-v4, #masthead-v4 .sub-logo-v4 .sub-logo-txt-v4 {font-family: "LanTing ZhongHei","Microsoft YaHei","SimHei"}
+        #masthead-v4 .main-logo-v4 { 
+        width: 108px; 
+        height: 38px;
+        margin-right: 0;
+        padding: 0 10px 0 0;
+        }
+        #masthead-v4 .sub-logo-v4 {
+        height: 49px;
+        line-height: 49px;
+        }
+        table {font-size:12px!important}
+        .unit-btn-bar {display:none}
+        .unit-stage .stage-node, .unit-stage .stage-bar, .unit-stage .stage-far{height:20px;clear:none!important}
+        .step-detail {display:none}
+		.mod-status div.status, .mod-print-btn {display:none}
+		.mod-detail .tab-context {border-bottom:1px solid #acb1ba}
+		.layer-main {background:none}
+ </style>
+</head>
+<body bgcolor="#ffffff" text="#000000" topmargin="10" marginheight="0" leftmargin="0" marginwidth="0">
+    <div id="doc">
+        <div id="header">
+            <div id="masthead-v4" class="w952 fd-clr">
+                <div class="ali-logo-v4">
+                    <a title="阿里巴巴" href="http://www.1688.com/?spm=a360q.8728381.0.0.VXX1Ng" class="main-logo-v4" data-spm-anchor-id="a360q.8728381.0.0"><img width="108" height="38" alt="阿里巴巴" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAAAmCAYAAAAhpX7HAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkQzMUMxMzIwQTk2MTFFNUExQTRGRjZCQzJDRDg4REQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkQzMUMxMzMwQTk2MTFFNUExQTRGRjZCQzJDRDg4REQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGRDMxQzEzMDBBOTYxMUU1QTFBNEZGNkJDMkNEODhERCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGRDMxQzEzMTBBOTYxMUU1QTFBNEZGNkJDMkNEODhERCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pn5lWFkAAAg6SURBVHjavFsLkE9VGD+7qBCpSHlbb5GUPLaakbxCFCU2ZhKGRCHNEE0lRaaRHkpP8qhme2z0UMZrQ0+RPGJtYkehrfV+7Gbp+2Z//3Hd7r3fd//33L6Z3+zs/5x7zj3nO+f7ft93zk0585AJIzUJfQi9CeMJXxt7cj7hakIrQgP0VRFlJwm9CKct9HMRoQr+FhMOEPajj7ilLKEq4WJCKuEgIZ9wWNtAaUWdNIeS2hBS8HuqhQFchrZZGe2hNC9ZEUFZ5Qh3ELrh/et41OG2cwirCJn4e8bC+HiObkb/NxHqO+bPKX8Q1hKygJNhFdbEoaSWMay0FoRxhDsDlOSU5Un0cR76YBtyiWJiGwPDCZsIEwmfRBgjz98UtClJNcwF4y/CNMLzhFPuiikOk9gSCuoDhUlyI2FNEjtqKuGekDu0HeHbEPV5JX9EaB5xYc0hjAhpLnmhvEW4O2LfP0Ifee4d9iQhA6YvTulBeBNKCyNs338IqazVhMstvPMgrP6ehCJF/QsIn8IMRpVrsSHSCXucpqDu/6CsRwiLk1AWSzbIgZa4fGxJWQnpQnhaWfc5S8pykrwsp+tihb0Ss7JmEp7ycbYa+TJE3QcJV8YwhtEKN8HsdlgMfXO7Q50mcS2cbPMYOhuPSdTKOsIXhO8I22C/i5TP8oIYKdQphG/7hrCPUIZQi9CdcEPAc6UIo+DP/GSkYlEy212KcTGhqA6T1wu+z09GJTZWgnTwi8wKqQyJdHQmLFGQC6bP78OXbo6wOJph4flJPqj1Fp/yIYTXA57fSagXUL4PMZbfGAcSFgb4q+WIDf2EXdeuxGTOJxx1FB4h/Bph8ioR5imUlYMVdldEZbE0EsqnByiL5Q1hAdYNCIMqBijLYFctFBjhTM34Uh0KeoHwGsxDFQwgWZkiDCDhm9qEpOsSnQ6SLYo2Ngsmt7xPWQWh3Z8j9m1gvs9ZMRMtTVyawvmuCEGVtfK3UF5Dycr85B+XFQrTd62IfbMU2EovueVhIeW1GyawyHK/mxRMr1xA+TXwu36yNSC84MB6R8CzPYWMB/uu+wPKud9f4lAYm4YBCoW2gQleScgl/I4XWo3f+woO2Ev2EjYGlDclLENg7ZZbwU7LBDy/SOg/K6CsLKyK14JoAsIRRGi+NyVJ6nNSU16UfGpIljgABMYErMR8xfZnOQHiMtmUJEc1IvVvsLM/ILyNLMZggdKzHMOE7hdMbq6Rc6OrwA/+NCUpur5GTsKzRcqMY4d1VaRuairbKgtfyKaov/KZhQglJHKSAdIzR6EslrGCsgzSR+MUbbUnLABzzFAoKzOhrDgU1jEGn8im8R3lZHC808/YPaebBvaskZeQnrIla2ABTBwKq6ug8lFkOsyHJJws7oJgPIowK3yAMCHkc2Php4sj9j8fPu9oXAprZuIVjoNeNGdPoYOkegjTG5SOaqrszx1EN7Ywt3W8QhHbOyyMcC5tO6L8POUznO2fJNTh0931hLYRx8NzMxxt1Vc+w4xvA8xYSsT+mdT9hJAgFoXVUNZjlngf4VKsRM5G18aOmGHkqwDDAuIpduLvCfFWWKkHXyIpjcuzjd2jKh4HJ6t7x6GwCxV19kBBs81/L55wGQcZQxQmx+vM6SpTckBaSvEeBai7xHgcw3sI++bFYLl+Y+eDyyqKtorQ1lzCIaVpnofda1VhGls/TGH+5ihYXrqHf5sVMKEJ4dhnFHYzL4xu2EEvK0gCT9gYnzJO6zVSKGoGrAkfpwzCezBBOSg8Wx7+26rCJJvN2f/PlW1JDK+B6/9bFPHUahAjpt7HHb/nIS3Uycg5wfEeloQv+EhnfpzJuR4WZJ/jd066P2tKLiWtF9pgq9LBpsIOKSZMK1uF8squ/wcK9XOwm/ID6qyEgy8WrEgP12+3I8gP2ll8ArIuoE4eFoxkffrbVJi0rfNDtHVMYded0k6oP8n4Z9qdwqb43ZDmOF1h4jcq/epjUt82FbZHkbHQSqWQCpWOL74K0Xe2UF7bI16yZVmkurVtKkw6IGwcoq3rhPLdLuqbYnEcUlvnCf+75bTFdytnU2EbkM7xEw5kr1DGHkMVfSXkuNCvCRlEtw25u4+ENKFRFuoBmwo7LGxpXokzhRXMmWu+CFMtoA4neN1X33YI7zbZ+B/vO4XZmnRjN8f1/29C/XuNLm3HLuMJoU6u7Wz9AqGck7efEVp7KKoTfE2G0MZSj0mS/A4H1XwIeJuPCUtQ81VGPs9y+8MVCovBC3k0sjteC5mZJl/tayj5V9sHmBy48iFedYVy+dL/XsSCTBoqKJ45AxPjvrjTGgPWCNPs7WC1ZZCdSFP6wTykoJwmmCn9LqO71czvvxOM+RTIVUOFH0z4whalLe+wk4j65yrqVvaIpySZbbxvWfHu+dCUfMghCU9OspdmH/XwlydgyjT3OlOQWamXRN983LI5jks4fPSeFUO7vIOCDjFHKEKLqOZ+nk8Z38pdFGPfbLXG2E5NOWUAMge2hNvq7EopuYXzhB1hnmwLJ2sHC6Yuw4T7DkArGzGuA3EqjCeW83uvRmynEL60k9F9Vrod1DjT2PmCkrMjE0AKihRj5rTV4zCTUeU0XEu6M+5MjXEb82QPBzlZHnICC2GCmGY/Y8IdtzOZ4VtGrWCaC5N4dyYF00FGpoUIfk/Bn6UhhClIkgfwguPvvQe5rUoQS+wnmAG2qWHuw/OJdHesmKaItSphkDzJ+9FeNkxQgaWFw+yzq6Pf+iA7Fc3Zj9KZrW5DtmYZiE2xhb5LY8F2MCWfQXG2pyrGzZvlEBZHLvpeC7Pqa/r/FWAATV69ST30MtcAAAAASUVORK5CYII="></a>
+                </div>
+            </div>
+
+        </div>
+        <div id="content" data-spm="content" data-spm-max-idx="75">
+            <div class="layer layer-main" style="background-color: #fff;padding-bottom: 0px;">
+                <div class="district screen">
+                    <div id="bd" class="buyer screen">
+           <!--&#23548;&#33322;&#26639;-->
+		    				
+<input id="prolongTakeUrl" type="hidden" value="//trade.1688.com/order/ajax/extend_confirm_time.jsx"><input id="prolongTakeInfoUrl" type="hidden" value="//trade.1688.com/order/ajax/is_extend_receive.jsx"><!-- &#23548;&#33322;  --><div class="mod mod-crumbs-progress">
+            <div class="unit-stage make-stage-crumb" data-stage="{&quot;stageIndex&quot;:4 }" style="width: 620px; visibility: visible;">
+                <ul class="list four-stage">
+<li class="stage-node stage-first-pass">
+						<div class="stage-label">提交订单</div>
+						<div class="stage-label stage-label-down text-lesser">2017-06-13 17:58:40</div>
+						<div class="stage-arrow stage-arrow-order"></div>
+					</li>
+                    <li class="stage-bar stage-bar-pass">
+						<div class="stage-far"></div>
+						<div class="stage-arrow stage-arrow-order"></div>
+					</li>
+                    <li class="stage-node stage-pass">
+						<div class="stage-label">付款</div>
+													<div class="stage-label stage-label-down text-lesser">2017-06-13 18:01:39</div>
+												<div class="stage-arrow stage-arrow-order"></div>
+					</li>
+                    <li class="stage-bar stage-bar-pass">
+						<div class="stage-far"></div>
+						<div class="stage-arrow stage-arrow-order"></div>
+					</li>
+                    <li class="stage-node stage-pass">
+						<div class="stage-label">卖家发货</div>
+													<div class="stage-label stage-label-down text-lesser">2017-06-13 18:46:11</div>
+												<div class="stage-arrow stage-arrow-order"></div>
+					</li>
+                    <li class="stage-bar stage-bar-pass">
+						<div class="stage-far"></div>
+						<div class="stage-arrow stage-arrow-order"></div>
+					</li>
+                    <li class="stage-node stage-last-pass">
+						<div class="stage-label">确认收货</div>
+													<div class="stage-label stage-label-down text-lesser">2017-06-28 18:46:25</div>
+												<div class="stage-arrow stage-arrow-order"></div>
+					</li>
+                </ul>
+</div>
+    	</div>
+					<!--&#25805;&#20316;&#23548;&#33322;&#26639;-->
+			<div id="message" class="mod-status">
+                <div class="content">
+								                    <!--&#20132;&#26131;&#25104;&#21151; ok-->
+                                        <div class="status">
+                        <div class="status-name">
+													
+                            <span class="label">当前订单状态：</span><span class="name"><em class="order-status text-stress">交易已成功</em></span>
+                        </div>
+                        <ol class="action-branch">
+<li>如果没有收到货，或收到货后出现问题，您可以联系卖家协商解决</li>
+							                            <li>如果卖家没有履行应尽的承诺，您可以投诉维权</li>
+														<li>								            <div class="memo memo-property">
+				<p>
+			<a data-tracelog="addNote" id="editComment" href="#" style="display:inline-block;">添加备忘</a>
+            <input class="tradeId" type="hidden" value="28159791468583970"><input class="cmtRemark" type="hidden" value="1"><input class="cmtContent" type="hidden" value=""></p>
+		    	<pre class="order-memo memo-lineheight memo-hidden">备忘：<span class="memo-info lesser"></span></pre>
+    </div>
+							</li>
+							
+                        </ol>
+</div>
+                    
+    			
+								<div class="material-protect-state" data-url="//trade.1688.com/order/ajax/get_material_protect_state.jsx?buyerId=1045587039" data-order-id="28159791468583970"></div>
+				</div>
+            </div>
+			    <!--&#25171;&#28857;&#28155;&#21152;    start-->
+			<input type="hidden" value="buyer" id="sellerOrBuyer"><input type="hidden" value="success" id="orderStatus"><!--&#25171;&#28857;&#28155;&#21152;   end--><!-- &#22791;&#24536;&#30340;&#28014;&#20986;&#23618; begin --><div id="modComment" class="modal" style="display: none;">
+                        <h3>
+                            <em>添加备忘</em><span data-tracelog="cancelNote" class="close"></span>
+</h3>
+                        <div class="box">
+                            <table cellpadding="0" cellspacing="0">
+<tr>
+<th>标记图标：</th>
+                                    <td>
+                                        <input id="remark1" type="radio" name="remark" value="1"><label class="comment1" for="remark1"></label>
+                                        <input id="remark2" type="radio" name="remark" value="2"><label class="comment2" for="remark2"></label>
+                                        <input id="remark3" type="radio" name="remark" value="3"><label class="comment3" for="remark3"></label>
+                                        <input id="remark4" type="radio" name="remark" value="4"><label class="comment4" for="remark4"></label>
+</td>
+                                </tr>
+<tr>
+<th>备忘说明：</th>
+                                    <td>
+                                        <div>
+                                            <textarea cols="" rows="" class="ipt-text" placeholder="备忘信息作为您对这笔订单的备忘记录，仅自己可见"></textarea><span class="gray">请输入备忘说明，最多500字。</span><span class="err" style="display: none;"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+</table>
+<div class="actions">
+                                <div class="fd-right">
+                                    <a data-tracelog="submitNote" class="btn-a2 confirm" href="javascript:;"><span class="btn-l"><em>确 定</em></span><span class="btn-r"></span></a><a data-tracelog="cancelNote" class="btn-a2 cancel" href="javascript:;"><span class="btn-l"><em>取 消</em></span><span class="btn-r"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <input id="cmtUrl" type="hidden" value="//trade.1688.com/order/ajax_order_memo.do?_input_charset=UTF-8"><input name="_csrf_token" type="hidden" value="aaae72cb50da02b665485ea05f54e00a">
+</div>
+					<!-- &#22791;&#24536;&#30340;&#28014;&#20986;&#23618; end -->
+
+
+						
+            <div id="tabPanel" class="tab-panel mod-buyer-detail mod-detail">
+                <div class="tab-header">
+                    <ul class="tab unit-tabs list">
+<li id="default-tab" class="current"><a class="tab-option" href="#">订单详情</a></li>
+                        <!-- &#22686;&#21152;&#31532;&#19968;&#20010;tab id&#65292;&#29992;&#20110;&#26597;&#30475;&#29289;&#27969;&#30340;&#33050;&#26412;(logistics-tab.js)&#29992; by liuyz -->
+						                            <li id="logistics-tab-title"><a class="tab-option" href="#" data-tracelog="viewLogistics">物流信息</a></li>
+						                    </ul>
+</div>
+				<!-- &#22686;&#21152;&#31532;&#19968;&#20010;tab&#26174;&#31034;&#20869;&#23481; id&#65292;&#29992;&#20110;&#26597;&#30475;&#29289;&#27969;&#30340;&#33050;&#26412;(logistics-tab.js)&#29992; by liuyz -->
+                <div id="default-tab-content" class="tab-context">
+					<div class="zone-user unit fd-clr">
+    					<div class="order-buyer-info">
+    						<h3>买家信息</h3>
+    						<ul>
+<li>订单号：<span>28159791468583970
+    																	            						            						<a data-tracelog="viewMobileOrderHelp" class="icon-phone-order" title="手机订单" href="http://3g.1688.com/?tracelog=wireless_tradedetail_buyer" target="_blank"></a>
+																											    								</span>
+    							</li>
+								<li>支付宝交易号： 2017061321001001010267643142  </li>
+								                                    <li>收货人：<span>戴沛芹</span>
+</li>
+                                    <li>收货地址：<span>广东省 广州市 白云区 鹤亭村鹤亭中路自编3号2楼</span>
+</li>
+																<li>手机：<span>18026387620</span>
+</li>
+                        		<li>电话：<span></span>
+</li>
+                             </ul>
+</div>
+						                             <div class="order-seller-info">
+        						<h3>卖家信息</h3>
+        						<ul>
+<li>供应商：<span class="ie-trustpic-lineheight"><a data-tracelog="viewUserCompany" href="https://shop1465318015522.1688.com?tracelog=contact_company" target="_blank">深圳市宝安区松岗包信天下皮具厂</a>
+        								                                        	<span class="tplogo" data-tplogo-memberid="b2b-2903974092906bb" data-tplogo-type="SMALL"></span>
+        								        								</span>
+        							</li>
+        							<li>会员登录名：<span><a data-tracelog="viewUserProfile" href="http://me.1688.com/*xC-i2FISvmvSMGQWOFISvmZixgTT.html" target="_blank">包信天下</a> <a data-tracelog="b2bAlitalk" class="ie-wangwang-lineheight" href="#" data-alitalk="{id:'包信天下'}"></a></span>
+</li>
+        							    								<li>支付宝账户：<span>chenjingqie@163.com</span>
+</li>
+    								        							<li>手机：<span>13570281025</span>
+</li>
+        							<li>电话：<span>86-020-13570281025</span>
+</li>
+                                </ul>
+</div>
+						    				</div>
+					<div class="zone-order">
+                    <div class="deal-wrap">
+						<table cellspacing="0" cellpadding="0">
+<colgroup>
+<col class="col-goods">
+<col class="col-price">
+<col class="col-quantity">
+<col class="col-saving">
+<col class="col-status">
+<col class="col-total">
+</colgroup>
+<thead><tr>
+<th class="order-detail"><div class="order-img">货品</div></th>
+                                    <th>单价(元)</th>
+                                    <th>数量</th>
+                                    <th>优惠(元)</th>
+                                    <th>货品状态</th>
+                                    <th>货品总价(元)</th>
+                                </tr></thead>
+<tbody>
+<tr class="item">
+<td class="order-detail">
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+													<a data-tracelog="offerImg" class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791469583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														</a>
+												</dt>
+                                                <dd class="description">
+													<a data-tracelog="offerTitle" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791469583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包
+													</a>
+												</dd>
+                                                <dd class="sku">
+													<div class="offer-item-detail">
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+    														<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>泥色</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+																		                                       	   <div class="offer-product-number">
+                                                              <span class="name">货号:</span><span class="value">BX01</span>       
+                                                           </div>   
+				                                            													    <div class="support-icon">
+    		<div class="icon-list">
+            	<a class="icon-item " href="http://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家支持先行赔付，保障买家交易安全">
+					</a>
+        		            		            		<a class="icon-item " href="https://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家已开通15天包换服务，您可在签收货物后的15天内更换商品。"></a>
+            		            		<a class="icon-item " href="http://page.1688.com/html/mjxdnxsfh.html?tracelog=nxsfhmjxd" target="_blank" title="该卖家已开通48小时发货服务，承诺在支付成功后48小时内为您发货。"></a>
+            		    			  		  </div>
+    </div>
+
+
+
+
+    													
+
+                              													</div>
+												</dd>
+											</dl>
+</td>
+										<td>
+                                            <div class="price" title="9.50">9.50 元/个</div>
+                                        </td>
+										<td>
+                                            <div class="quantity" title="20">20</div>
+                                        </td>
+                                        <td>
+                                            <div class="saving"><div>																																																									                        																																																																							    											                                                    <div>-</div>
+    																						                                            </div></div>
+                                        </td>
+																					<td class="status-td">
+										                                            <div class="status">
+												    												                                                        												        												        													已确认收货<br>
+</div>
+                                        </td>
+																				<td rowspan="7" class="total-money-td">
+											<div class="total-money">855.00</div>
+                                            <div class="total-normal">																	    </div>
+                                        </td>
+										                                    </tr>
+<tr class="item">
+<td class="order-detail">
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+													<a data-tracelog="offerImg" class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791470583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														</a>
+												</dt>
+                                                <dd class="description">
+													<a data-tracelog="offerTitle" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791470583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包
+													</a>
+												</dd>
+                                                <dd class="sku">
+													<div class="offer-item-detail">
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+    														<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>CP迷彩</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+																		                                       	   <div class="offer-product-number">
+                                                              <span class="name">货号:</span><span class="value">BX01</span>       
+                                                           </div>   
+				                                            													    <div class="support-icon">
+    		<div class="icon-list">
+            	<a class="icon-item " href="http://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家支持先行赔付，保障买家交易安全">
+					</a>
+        		            		            		<a class="icon-item " href="https://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家已开通15天包换服务，您可在签收货物后的15天内更换商品。"></a>
+            		            		<a class="icon-item " href="http://page.1688.com/html/mjxdnxsfh.html?tracelog=nxsfhmjxd" target="_blank" title="该卖家已开通48小时发货服务，承诺在支付成功后48小时内为您发货。"></a>
+            		    			  		  </div>
+    </div>
+
+
+
+
+    													
+
+                              													</div>
+												</dd>
+											</dl>
+</td>
+										<td>
+                                            <div class="price" title="9.50">9.50 元/个</div>
+                                        </td>
+										<td>
+                                            <div class="quantity" title="10">10</div>
+                                        </td>
+                                        <td>
+                                            <div class="saving"><div>																																																									                        																																																																							    											                                                    <div>-</div>
+    																						                                            </div></div>
+                                        </td>
+																					<td class="status-td">
+										                                            <div class="status">
+												    												                                                        												        												        													已确认收货<br>
+</div>
+                                        </td>
+										                                    </tr>
+<tr class="item">
+<td class="order-detail">
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+													<a data-tracelog="offerImg" class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791471583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														</a>
+												</dt>
+                                                <dd class="description">
+													<a data-tracelog="offerTitle" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791471583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包
+													</a>
+												</dd>
+                                                <dd class="sku">
+													<div class="offer-item-detail">
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+    														<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>军绿</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+																		                                       	   <div class="offer-product-number">
+                                                              <span class="name">货号:</span><span class="value">BX01</span>       
+                                                           </div>   
+				                                            													    <div class="support-icon">
+    		<div class="icon-list">
+            	<a class="icon-item " href="http://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家支持先行赔付，保障买家交易安全">
+					</a>
+        		            		            		<a class="icon-item " href="https://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家已开通15天包换服务，您可在签收货物后的15天内更换商品。"></a>
+            		            		<a class="icon-item " href="http://page.1688.com/html/mjxdnxsfh.html?tracelog=nxsfhmjxd" target="_blank" title="该卖家已开通48小时发货服务，承诺在支付成功后48小时内为您发货。"></a>
+            		    			  		  </div>
+    </div>
+
+
+
+
+    													
+
+                              													</div>
+												</dd>
+											</dl>
+</td>
+										<td>
+                                            <div class="price" title="9.50">9.50 元/个</div>
+                                        </td>
+										<td>
+                                            <div class="quantity" title="10">10</div>
+                                        </td>
+                                        <td>
+                                            <div class="saving"><div>																																																									                        																																																																							    											                                                    <div>-</div>
+    																						                                            </div></div>
+                                        </td>
+																					<td class="status-td">
+										                                            <div class="status">
+												    												                                                        												        												        													已确认收货<br>
+</div>
+                                        </td>
+										                                    </tr>
+<tr class="item">
+<td class="order-detail">
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+													<a data-tracelog="offerImg" class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791472583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														</a>
+												</dt>
+                                                <dd class="description">
+													<a data-tracelog="offerTitle" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791472583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包
+													</a>
+												</dd>
+                                                <dd class="sku">
+													<div class="offer-item-detail">
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+    														<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>黑色</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+																		                                       	   <div class="offer-product-number">
+                                                              <span class="name">货号:</span><span class="value">BX01</span>       
+                                                           </div>   
+				                                            													    <div class="support-icon">
+    		<div class="icon-list">
+            	<a class="icon-item " href="http://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家支持先行赔付，保障买家交易安全">
+					</a>
+        		            		            		<a class="icon-item " href="https://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家已开通15天包换服务，您可在签收货物后的15天内更换商品。"></a>
+            		            		<a class="icon-item " href="http://page.1688.com/html/mjxdnxsfh.html?tracelog=nxsfhmjxd" target="_blank" title="该卖家已开通48小时发货服务，承诺在支付成功后48小时内为您发货。"></a>
+            		    			  		  </div>
+    </div>
+
+
+
+
+    													
+
+                              													</div>
+												</dd>
+											</dl>
+</td>
+										<td>
+                                            <div class="price" title="9.50">9.50 元/个</div>
+                                        </td>
+										<td>
+                                            <div class="quantity" title="20">20</div>
+                                        </td>
+                                        <td>
+                                            <div class="saving"><div>																																																									                        																																																																							    											                                                    <div>-</div>
+    																						                                            </div></div>
+                                        </td>
+																					<td class="status-td">
+										                                            <div class="status">
+												    												                                                        												        												        													已确认收货<br>
+</div>
+                                        </td>
+										                                    </tr>
+<tr class="item">
+<td class="order-detail">
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+													<a data-tracelog="offerImg" class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791473583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														</a>
+												</dt>
+                                                <dd class="description">
+													<a data-tracelog="offerTitle" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791473583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包
+													</a>
+												</dd>
+                                                <dd class="sku">
+													<div class="offer-item-detail">
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+    														<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>ACU灰色</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+																		                                       	   <div class="offer-product-number">
+                                                              <span class="name">货号:</span><span class="value">BX01</span>       
+                                                           </div>   
+				                                            													    <div class="support-icon">
+    		<div class="icon-list">
+            	<a class="icon-item " href="http://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家支持先行赔付，保障买家交易安全">
+					</a>
+        		            		            		<a class="icon-item " href="https://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家已开通15天包换服务，您可在签收货物后的15天内更换商品。"></a>
+            		            		<a class="icon-item " href="http://page.1688.com/html/mjxdnxsfh.html?tracelog=nxsfhmjxd" target="_blank" title="该卖家已开通48小时发货服务，承诺在支付成功后48小时内为您发货。"></a>
+            		    			  		  </div>
+    </div>
+
+
+
+
+    													
+
+                              													</div>
+												</dd>
+											</dl>
+</td>
+										<td>
+                                            <div class="price" title="9.50">9.50 元/个</div>
+                                        </td>
+										<td>
+                                            <div class="quantity" title="10">10</div>
+                                        </td>
+                                        <td>
+                                            <div class="saving"><div>																																																									                        																																																																							    											                                                    <div>-</div>
+    																						                                            </div></div>
+                                        </td>
+																					<td class="status-td">
+										                                            <div class="status">
+												    												                                                        												        												        													已确认收货<br>
+</div>
+                                        </td>
+										                                    </tr>
+<tr class="item">
+<td class="order-detail">
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+													<a data-tracelog="offerImg" class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791474583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														</a>
+												</dt>
+                                                <dd class="description">
+													<a data-tracelog="offerTitle" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791474583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包
+													</a>
+												</dd>
+                                                <dd class="sku">
+													<div class="offer-item-detail">
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+    														<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>三色迷彩</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+																		                                       	   <div class="offer-product-number">
+                                                              <span class="name">货号:</span><span class="value">BX01</span>       
+                                                           </div>   
+				                                            													    <div class="support-icon">
+    		<div class="icon-list">
+            	<a class="icon-item " href="http://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家支持先行赔付，保障买家交易安全">
+					</a>
+        		            		            		<a class="icon-item " href="https://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家已开通15天包换服务，您可在签收货物后的15天内更换商品。"></a>
+            		            		<a class="icon-item " href="http://page.1688.com/html/mjxdnxsfh.html?tracelog=nxsfhmjxd" target="_blank" title="该卖家已开通48小时发货服务，承诺在支付成功后48小时内为您发货。"></a>
+            		    			  		  </div>
+    </div>
+
+
+
+
+    													
+
+                              													</div>
+												</dd>
+											</dl>
+</td>
+										<td>
+                                            <div class="price" title="9.50">9.50 元/个</div>
+                                        </td>
+										<td>
+                                            <div class="quantity" title="10">10</div>
+                                        </td>
+                                        <td>
+                                            <div class="saving"><div>																																																									                        																																																																							    											                                                    <div>-</div>
+    																						                                            </div></div>
+                                        </td>
+																					<td class="status-td">
+										                                            <div class="status">
+												    												                                                        												        												        													已确认收货<br>
+</div>
+                                        </td>
+										                                    </tr>
+<tr class="item last-item">
+<td class="order-detail">
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+													<a data-tracelog="offerImg" class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791475583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														</a>
+												</dt>
+                                                <dd class="description">
+													<a data-tracelog="offerTitle" href="https://trade.1688.com/order/offer_snapshot.htm?buyer_id=1045587039&amp;order_entry_id=28159791475583970" title="军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包" target="_blank">
+														军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包
+													</a>
+												</dd>
+                                                <dd class="sku">
+													<div class="offer-item-detail">
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+    														<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>橘色</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+    													<!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+																		                                       	   <div class="offer-product-number">
+                                                              <span class="name">货号:</span><span class="value">BX01</span>       
+                                                           </div>   
+				                                            													    <div class="support-icon">
+    		<div class="icon-list">
+            	<a class="icon-item " href="http://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家支持先行赔付，保障买家交易安全">
+					</a>
+        		            		            		<a class="icon-item " href="https://page.1688.com/buyerprotection/buyer.html" target="_blank" title="该卖家已开通15天包换服务，您可在签收货物后的15天内更换商品。"></a>
+            		            		<a class="icon-item " href="http://page.1688.com/html/mjxdnxsfh.html?tracelog=nxsfhmjxd" target="_blank" title="该卖家已开通48小时发货服务，承诺在支付成功后48小时内为您发货。"></a>
+            		    			  		  </div>
+    </div>
+
+
+
+
+    													
+
+                              													</div>
+												</dd>
+											</dl>
+</td>
+										<td>
+                                            <div class="price" title="9.50">9.50 元/个</div>
+                                        </td>
+										<td>
+                                            <div class="quantity" title="10">10</div>
+                                        </td>
+                                        <td>
+                                            <div class="saving"><div>																																																									                        																																																																							    											                                                    <div>-</div>
+    																						                                            </div></div>
+                                        </td>
+																					<td class="status-td">
+										                                            <div class="status">
+												    												                                                        												        												        													已确认收货<br>
+</div>
+                                        </td>
+										                                    </tr>
+</tbody>
+</table>
+</div>
+                    		                	<!-- &#26381;&#21153;&#35746;&#21333; begin  -->
+	    <!-- &#26381;&#21153;&#35746;&#21333; end  -->
+					
+																					<div class="money">
+										<!--&#36816;&#36153;-->
+										                    <div class="total total-normal">
+						运费：<strong>0.00</strong> 元
+					</div>
+																<div class="total total-last">
+								    	实付款
+    		：<span class="orange bold stress real-pay">855.00</span> 元
+						</div>
+																	                        
+                    </div>
+                    </div>
+                    					    			    				                
+                </div>
+				<!--tab3-->
+								<script type="text/javascript"> 
+YLDetail.setLogisticsUrl('https://wuliu.1688.com/order/ajax/logistics_trace_ajax.jsx');
+</script><div class="tab-context logistics-tab" id="logistics-info" style="display:none">
+    <div class="box">
+				           <!--&#29289;&#27969;&#35814;&#24773; start-->
+           <div class="logistics-detail" id="logistics-detail">
+			    				  				  				  <div class="logistics-title">
+<strong>物流单1</strong><span class="shadow"></span>
+</div>
+				  			    <div class="title-status">
+					<span class="orange"> 
+													
+
+ 自行发货,
+已发货
+
+							 											</span>
+			    </div>
+				  <div class="order-detail">
+				  					<ul class="cell-detail-list last-list" name="LP00076689162163">
+<li>
+                       <strong>
+                                                   <span class="left-title float-cancel">物流编号：</span>
+                          <span class="gray-light float-cancel logistic-number-margin">LP00076689162163</span>
+												                            <!--&#35774;&#32622;&#35746;&#21333;&#30340;&#38170;&#28857; start-->
+						  <a href="#" name="LP00076689162163" class="hide-anchor" hidefocus="true"> </a>
+                          <!--&#35774;&#32622;&#35746;&#21333;&#30340;&#38170;&#28857; end-->
+                       </strong>
+                  </li>
+				                     <li>
+                     <span class="left-title">物流公司：</span>
+                     <span class="gray-light right-con">优速快递</span>
+                   </li>
+                   <li>
+                     <span class="left-title">运单号码：</span>
+                     <span class="gray-light right-con">
+																		    518363552523
+											 </span>
+                   </li>
+    			   									                  <li>
+                    <span class="left-title">发货时间：</span>
+                    <span class="gray-light right-con">2017-06-13 18:46:10</span>
+                 </li>
+				 				 				 				                  <li class="fd-clr">
+                    <div class="left-title">物流跟踪：</div>
+															  <div class="right-con gray-light logistics-max-width">
+                          <p>
+                            <span class="fd-clr orange-v2">此运单发货已超过180天，不再提供物流跟踪信息</span>
+                          </p>
+                      </div>
+				    				 </li>
+							 
+								</ul>
+<div class="contain-title">物流单包含如下货品</div>
+                    <div class="right-con offer-list">
+						<table class="zone-logistics" cellspacing="0" cellpadding="0">
+<colgroup>
+<col class="col-goods">
+<col class="col-weight">
+<col class="col-quantity">
+</colgroup>
+<tbody>
+<tr class="item">
+<td>
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+<a class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791469583970" target="_blank" title="">
+    													</a>
+    											</dt>
+    											<dd class="description"><a href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791469583970" target="_blank" title="">军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包</a></dd>
+    											<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+        									    	<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>泥色</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+        									    <!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+                                            </dl>
+</td>
+    									                                            <td><div class="weight-left weight">单位重量：0.2公斤/个</div></td>
+        								    									<td>
+                                            <div class="quantity">数量：20个</div>
+                                        </td>
+                                    </tr>
+<tr class="item">
+<td>
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+<a class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791470583970" target="_blank" title="">
+    													</a>
+    											</dt>
+    											<dd class="description"><a href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791470583970" target="_blank" title="">军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包</a></dd>
+    											<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+        									    	<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>CP迷彩</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+        									    <!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+                                            </dl>
+</td>
+    									                                            <td><div class="weight-left weight">单位重量：0.2公斤/个</div></td>
+        								    									<td>
+                                            <div class="quantity">数量：10个</div>
+                                        </td>
+                                    </tr>
+<tr class="item">
+<td>
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+<a class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791471583970" target="_blank" title="">
+    													</a>
+    											</dt>
+    											<dd class="description"><a href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791471583970" target="_blank" title="">军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包</a></dd>
+    											<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+        									    	<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>军绿</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+        									    <!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+                                            </dl>
+</td>
+    									                                            <td><div class="weight-left weight">单位重量：0.2公斤/个</div></td>
+        								    									<td>
+                                            <div class="quantity">数量：10个</div>
+                                        </td>
+                                    </tr>
+<tr class="item">
+<td>
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+<a class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791472583970" target="_blank" title="">
+    													</a>
+    											</dt>
+    											<dd class="description"><a href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791472583970" target="_blank" title="">军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包</a></dd>
+    											<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+        									    	<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>黑色</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+        									    <!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+                                            </dl>
+</td>
+    									                                            <td><div class="weight-left weight">单位重量：0.2公斤/个</div></td>
+        								    									<td>
+                                            <div class="quantity">数量：20个</div>
+                                        </td>
+                                    </tr>
+<tr class="item">
+<td>
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+<a class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791473583970" target="_blank" title="">
+    													</a>
+    											</dt>
+    											<dd class="description"><a href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791473583970" target="_blank" title="">军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包</a></dd>
+    											<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+        									    	<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>ACU灰色</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+        									    <!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+                                            </dl>
+</td>
+    									                                            <td><div class="weight-left weight">单位重量：0.2公斤/个</div></td>
+        								    									<td>
+                                            <div class="quantity">数量：10个</div>
+                                        </td>
+                                    </tr>
+<tr class="item">
+<td>
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+<a class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791474583970" target="_blank" title="">
+    													</a>
+    											</dt>
+    											<dd class="description"><a href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791474583970" target="_blank" title="">军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包</a></dd>
+    											<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+        									    	<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>三色迷彩</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+        									    <!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+                                            </dl>
+</td>
+    									                                            <td><div class="weight-left weight">单位重量：0.2公斤/个</div></td>
+        								    									<td>
+                                            <div class="quantity">数量：10个</div>
+                                        </td>
+                                    </tr>
+<tr class="item last-tr">
+<td>
+                                            <dl class="cell-thumbnail">
+<dt class="side img-vertical">
+<a class="img-wrap" href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791475583970" target="_blank" title="">
+    													</a>
+    											</dt>
+    											<dd class="description"><a href="https://trade.1688.com/order/offer_snapshot.htm?order_entry_id=28159791475583970" target="_blank" title="">军迷雷霆战术腰包 户外运动皮带腰包 零钱包 穿皮带手机包</a></dd>
+    											<!-- &#22320;&#24179;&#32447;&#26032;&#22686; START -->
+        									    	<div class="lineUnderProductName"></div>
+		<div class="trade-spec">
+	   	     			 <span class="spec-item spec-item-color sku-item">颜色<font class="semicolon">:</font><strong>橘色</strong><font class="semicolon"></font> </span>
+		        	     			 <span class="spec-item spec-item-last sku-item">尺寸<font class="semicolon">:</font><strong>高17.5*宽12*厚6CM</strong></span>
+		        	</div>	
+   
+	
+
+
+        									    <!-- &#22320;&#24179;&#32447;&#26032;&#22686; END -->
+                                            </dl>
+</td>
+    									                                            <td><div class="weight-left weight">单位重量：0.2公斤/个</div></td>
+        								    									<td>
+                                            <div class="quantity">数量：10个</div>
+                                        </td>
+                                    </tr>
+</tbody>
+</table>
+</div>
+				</div>
+							  </div>			  
+		   	</div>
+	</div>
+				            </div>
+			<!--end tabPanel-->
+			<!--&#25171;&#21360;&#25353;&#38062;  start-->
+	        			 <div class="mod-print-btn">
+				<a class="button button-stress button-large" href="https://trade.1688.com/order/buyer_order_print.htm?order_id=28159791468583970&amp;is_his=false" data-tracelog="bottomOrderPrint" target="_blank" title="" style="">打印订单详情</a>
+			</div>
+		    			<!--&#25171;&#21360;&#25353;&#38062;  end-->	
+		</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

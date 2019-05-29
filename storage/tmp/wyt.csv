@@ -1,0 +1,108 @@
+﻿客户单号,转单号,运输方式,目的国家,收件人姓名,"州,省",城市,联系地址,收件人电话,收件人邮箱,收件人邮编,重量,海关报关品名1,配货信息1,申报价值1,申报品数量1
+#35789,,MT-EUEXP,ES,"Juan Carlos Muñoz",M,Madrid,"Av. Ciudad de Barcelona 198",000,,28007,0.85,,"001-164(1) ",13.99,1
+#35871,,MT-EUEXP,ES,"jose briceno",AL,Vera,"Calle fuensalida 2",000,,4620,0.85,,"001-112(1) ",13.99,1
+#35882,,MT-EUEXP,ES,"Javier Sánchez-Brunete Sánchez-Brunete",TO,Lillo,"Calle, Del Convento, nun. 18",627451905,,45870,0.85,,"001-112(1) ",13.99,1
+#35937,,MT-EUEXP,ES,"EZEQUIEL TORRES QUESADA",J,JAEN,"C/ SEGUNDA TRAVESÍA CRUZ DE LA MAGDALENA NÚM;8, HOUSE","+34 651 81 46 73",,23004,0.85,,"001-112(1) ",13.99,1
+#36470,,MT-EUEXP,ES,"adolfo vela charro",B,Calella,"romani 38, , 1° 1°",000,,8370,0.85,,"001-112(1) ",13.99,1
+#28733,,MT-EUEXP,ES,"global equipamiento",MU,LORCA,"C/ENRIQUE ZUMEL Nº6",968470093,,30800,0.85,,"001-169(1) ",13.99,1
+#35804,,MT-EUEXP,IT,"Mattia Macchioni",VR,"Cerro Veronese","Via Lore N°15","340 280 4529",,37020,0.85,,"001-112(4) ",13.99,1
+#35814,,MT-EUEXP,IT,"Fabio Blotta",BG,"Bergamo ","via Alessandro Noli, 26, Presso Questura",000,,24125,0.85,,"001-112(1) ",13.99,1
+#35818,,MT-EUEXP,IT,"alessio mami",FC,cesenatico,"viale giosue carducci 96a, Calzedonia",3804501034,,47042,0.85,,"001-112(1) ",13.99,1
+#35834,,MT-EUEXP,IT,"Matteo Merola",BS,brescia,"via terza 34 villaggio prealpino","331 508 6597",,25136,0.85,,"001-136(1) ",13.99,1
+#35854,,MT-EUEXP,IT,"matteo pirazzoli",RA,LUGO,"VIALE DE BROZZI 94/5",000,,48022,0.85,,"001-169(1) , 001-112(2) ",13.99,1
+#35873,,MT-EUEXP,IT,"Gianluca  Latino",RM,Rome,"Via Teofilo De Angelis, 10","+33 849 21 12 6",,124,0.85,,"001-112(1) ",13.99,1
+#35896,,MT-EUEXP,IT,"BENITO FIORILLO",RM,"BRACCIANO RM","VIA DEI LECCI 59",000,,62,0.85,,"001-112(1) ",13.99,1
+#35960,,MT-EUEXP,IT,"Andrea Tosolini",TS,Trieste,"Salita di vuardel 23",000,,34128,0.85,,"001-112(4) ",13.99,1
+#36098,,MT-EUEXP,IT,"angelo pre' c/o europressvit",MI,buccinasco,"via veneto n10",000,,20090,0.85,,"001-112(1) ",13.99,1
+#36117,,MT-EUEXP,IT,"GIACOMO GIRAFFA",PA,PALERMO,"PIAZZA SAN FRANCESCO DI PAOLA, 37",000,,90138,0.85,,"001-112(1) ",13.99,1
+#36125,,MT-EUEXP,IT,"Luca De Rosa",PU,pesaro,"via D. Bramante 52",000,,61121,0.85,,"001-112(1) ",13.99,1
+#36487,,MT-EUEXP,IT,"Alessandro Fusetti",MB,"Vimercate (MB)","Via Energy Park, 14, c/o Nokia","+39 342 161 9352",,20871,0.85,,"001-112(1) ",13.99,1
+#36513,,MT-EUEXP,IT,"Ruben RF GROUP",VI,Creazzo,"Via Cima XII 8",000,,36051,0.85,,"001-112(1) ",13.99,1
+#36579,,MT-EUEXP,IT,"Mario Vecchiati ",MI,Milano,"Via Maffeo Bagarotti N.44","392 754 6007",,20152,0.85,,"001-112(1) ",13.99,1
+#36650,,MT-EUEXP,IT,"Luciano Spicuglia",SR,Siracusa,"Via L. Patania 6/b",000,,96100,0.85,,"001-164(1) ",13.99,1
+#36792,,MT-EUEXP,IT,"Lorenzo Brevi",MI,Milano,"via Aristotele 56",000,,20128,0.85,,"001-112(1) ",13.99,1
+#35918,,MT-EUEXP,NL,"Gideon Ruijtenschildt",,Halfweg,"Burg Simonsstraat 2, 2",000,,1165LS,0.85,,"001-112(1) ",13.99,1
+#36110,,MT-EUEXP,NL,"Bram Ekels",,Waalwijk,"Cederstraat 12",6539945575,,5143AN,0.85,,"001-112(1) ",13.99,1
+#36620,,MT-EUEXP,NL,"V. Wolf",,"Nieuw- & St. Joosland","Eersteweg, 4",000,,"4339 PJ",0.85,,"001-116(1) , 001-112(1) ",13.99,1
+#35810,,MT-EUEXP,IE,"Tom Collopy",,Limerick,"56 Assumpta Park, Kings Island",000,,"V94 DC8Y",0.85,,"001-169(1) , 001-112(2) ",13.99,1
+#35849,,MT-EUEXP,IE,"Peter Cronin",,Cork.,"Apt.7,Park Road Centre,Cobh ,Co ,Cork.","086 855 9151",,"P24 P972",0.85,,"001-112(1) ",13.99,1
+#36078,,MT-EUEXP,IE,"kenneth mullen",,bettystown,"narroway road",000,,NA,0.85,,"001-112(4) ",13.99,1
+#36135,,MT-EUEXP,IE,"Pat  Nangle",,Cork,"TYOS1 DAC, Griffith College Wellington Road",000,,,0.85,,"001-112(4) ",13.99,1
+#36138,,MT-EUEXP,IE,"john Clifton",,Wexford," Baldwinstown Castle Baldwinstown Bridgetown",000,,WEXFORD,0.85,,"001-112(1) ",13.99,1
+#36160,,MT-EUEXP,IE,"Tony Morrow",,Cork,"Strandview, Ballycotton",000,,21,0.85,,"001-112(1) ",13.99,1
+#36265,,MT-EUEXP,IE,"Carl Hunt",,"Kildare Town","9 Cloghgarret Abbey, Rathbride Rd",000,,KILDARE,0.85,,"001-169(1) , 001-112(2) ",13.99,1
+#36379,,MT-EUEXP,IE,"John Allen",,Kinsale,"64 Lr. O'connell St.",000,,"P17 D540",0.85,,"001-112(1) ",13.99,1
+#36454,,MT-EUEXP,IE,"Mr Milosz  Makowski",,Carrightwohill,"22 Hazelcourt, Castlelake",000,,"T45 N523",0.85,,"001-112(1) ",13.99,1
+#36618,,MT-EUEXP,IE,"Bryan  Clancy ",,"Limerick ","42 Roundwood , Rosbrien",000,,,0.85,,"001-112(1) ",13.99,1
+#35853,,WYT-SWISS,FI,"Jani Lappeteläinen",,Helsinki,"Jokiniementie 4 c 26, 00650 helsinki",000,,650,0.85,,"001-112(1) ",13.99,1
+#36688,,WYT-SWISS,FI,"Stefan Aartamo",,Jakobstad,"Skutnaesgatan, 20A6",000,,68620,0.85,,"001-112(4) ",13.99,1
+#35782,,MT-EUEXP,FR,"Calais Loris",,Paris,"135 Rue Lecourbe",698804077,,75015,0.85,,"001-112(1) ",13.99,1
+#35800,,MT-EUEXP,FR,"david bernardinis",,"Pont st Vincent","32 rue Albert Martin",680117611,,54550,0.85,,"001-116(1) , 001-112(1) ",13.99,1
+#35892,,MT-EUEXP,FR,"Julien Dieudé ",,Cannes,"9 rue Guy de Maupassant ","06 37 76 53 51",,6400,0.85,,"001-112(1) ",13.99,1
+#36321,,MT-EUEXP,FR,"Cédric DA SILVA",,LOURDES,"2C AVENUE JEAN PRAT",000,,65100,0.85,,"001-258(1) ",13.99,1
+#36413,,MT-EUEXP,FR,"dominique probst",,nice,"352, ave st marguerite",000,,6200,0.85,,"001-112(1) ",13.99,1
+#36453,,MT-EUEXP,FR,"JEAN-JACQUES VILA",,"Saint Laurent de la Salanque","8 Rue André MAUROIS",000,,66250,0.85,,"001-112(1) ",13.99,1
+#36472,,MT-EUEXP,FR,"Benjamin LÉPINAY",,VIERZON,"39 chemin de l'abricot",000,,18100,0.85,,"001-169(1) , 001-112(2) ",13.99,1
+#36533,,MT-EUEXP,FR,"Houcine Mezaache",,"Charbonnières les Bains","12 avenue du Général de Gaulle",000,,69260,0.85,,"001-148(1) ",13.99,1
+#36638,,MT-EUEXP,FR,"TOMASZ KUZMINSKI",,JANZE,"2 RUE ANDREE DE VILLOUTREYS",437501920,,35150,0.85,,"001-112(1) ",13.99,1
+#35835,,WYT-SWISS,DK,"Denni Pettersson",,Hasle,"Kirkedalsvej 23",000,,3790,0.85,,"001-112(1) ",10.79,1
+#35864,,WYT-SWISS,DK,"David Murphy",,Ugerløse,"toftegårdsvej, 7",000,,4350,0.85,,"001-112(1) ",10.79,1
+#36086,,WYT-SWISS,DK,"Nikolaj Rou",,Randers,"Schousgade, 1A, 1.tv.",000,,8900,0.85,,"001-112(1) ",10.79,1
+#36674,,WYT-SWISS,DK,"Ken Ladekarl",,Loesning,"Neptunvej 42",000,,8723,0.85,,"001-28003(1) ",10.79,1
+#35793,,MT-EUEXP,BE,"FRANCIS ARQUIN",,BRUSSELS,"1468, CHAUSSÉE DE WAVRE, Bye 79",000,,1160,0.85,,"001-118(1) ",13.99,1
+#36528,,MT-EUEXP,BE,"David Van Wynsberghe",,Asper,"Tempelstraat 23",000,,9890,0.85,,"001-112(1) ",13.99,1
+#36556,,MT-EUEXP,BE,"Jeroen Vanderheyden",,Houthalen-Helchteren,"Kastanjestraat 62",000,,3530,0.85,,"001-112(1) ",13.99,1
+#36794,,MT-EUEXP,BE,"Daniel Dumitrescu",,Bruxelles,"Avenue des Nenuphars 34, po box 3, apt. 2.0",000,,1160,0.85,,"001-144(1) , 001-148(2) , 001-164(1) , 001-135(1) , 001-19002(2) ",13.99,1
+#35966,,,BR,"Igor Campos",PE,Recife,"Avenida Boa Viagem  1478  apto 1202, Boa Viagem",000,,51111-000,0.85,,"001-112(1) ",13.99,1
+#36062,,,BR,"Andre Luiz Figueiredo",SP,"São Paulo","Avenida Interlagos  800  Pauba 113, Jardim Marajoara",000,,04660-000,0.85,,"001-112(1) ",13.99,1
+#36283,,,BR,"Erick Faraco Clausell",SP,"São Paulo","R. Dom Bento Pickel, 395",1122562684,,2544000,0.85,,"001-197(1) , 001-112(2) ",13.99,1
+#36290,,,BR,"Ricardo Camargo",SP,Campinas,"Rua Visconde do Rio Claro  142, Cidade Universitária",000,,13083-650,0.85,,"001-112(1) ",13.99,1
+#36308,,,BR,"André Maia",MG,Uberlândia,"rua cecilio jorge, 292, apto 201",000,,38408196,0.85,,"001-112(1) ",13.99,1
+#36649,,,BR,"Tymur mirza klink",RJ,Parati,"rua pedro stanisce  214, parque ipe",000,,23970-000,0.85,,"001-169(1) , 001-112(2) ",13.99,1
+#36305,,WYT-SWISS,NO,"Daniel Djønne",,Djønno,"Tjoflotvegen 616",000,,5734,0.85,,"001-112(1) ",13.99,1
+#36793,,WYT-SWISS,NO,"Knut H Arnesen",,Tonsberg,"Kapt. Hoffs alle 7",000,,3116,0.85,,"001-112(1) ",13.99,1
+#36768,,WYT-SWISS,SE,"Sylvester Travish",,Stockholm,"Skebokvarnsvägen 307, Apartment","073 422 81 18",,12453,0.85,,"001-184(1) ",13.99,1
+#35794,,MT-EUEXP,DE,"ODESSA e.K. Jurij Duschko",,München,"Karlsplatz 4",000,,80335,0.85,,"001-112(1) ",13.99,1
+#35868,,MT-EUEXP,DE,"Jens Fast",,Speyer,"Lange Gewann 39",000,,67346,0.85,,"001-112(4) ",13.99,1
+#35939,,MT-EUEXP,DE,"Rainer Rothbauer",,Lindau,"Alter Schulweg 7",000,,88131,0.85,,"001-116(1) ",13.99,1
+#35957,,MT-EUEXP,DE,"Benjamin Heinrich ",,"Ingersheim ","Hindenburgplatz  7",000,,74379,0.85,,"001-112(1) ",13.99,1
+#36045,,MT-EUEXP,DE,"Fabian Nietzer",,Königswinter,"Neuer Weg 9",000,,53639,0.85,,"001-112(1) ",13.99,1
+#36099,,MT-EUEXP,DE,"JUERGEN STROBEL",,AUGSBURG,"Bleicherbreite 25 a",15233970037,,86154,0.85,,"001-112(1) ",13.99,1
+#36129,,MT-EUEXP,DE,"Daniel Kern",,Sulzbach,"Wiesenstraße 8",000,,66280,0.85,,"001-112(1) ",13.99,1
+#36131,,MT-EUEXP,DE,"SU Metzen, Axel",,"Rennerod (WW)","Am Alsberg 2 - Alsberg Kaserne, VU 4./ Sanitätsregiment 2",000,,56477,0.85,,"001-112(4) ",13.99,1
+#36297,,MT-EUEXP,DE,"Christian Höppner",,Mühlhausen,"Wendewehrstraße, 92",000,,99974,0.85,,"001-112(4) ",13.99,1
+#36451,,MT-EUEXP,DE,"Serghei Lainer",,Saarbrücken,"Mainzerstr. 143",000,,66121,0.85,,"001-164(1) ",13.99,1
+#36499,,MT-EUEXP,DE,"Monika  Csernus ",,"Hofheim ","Theodor-Körner-str 2","01575 4190276",,65719,0.85,,"001-149(1) , 001-146(1) , 001-135(1) ",13.99,1
+#36633,,MT-EUEXP,DE,"Uffe Reidl",,Berend,"Dorf Straße 21 a",4529851975,,24881,0.85,,"001-112(1) ",13.99,1
+#36658,,MT-EUEXP,DE,"Hanif Mashal",,Hamburg,"Roonstrasse 21",000,,20253,0.85,,"001-112(1) ",13.99,1
+#35950,,MT-EUEXP,PT,"Elisabete Silva",PT-11,Lisbon,"Av. Dom Pedro V n2 Piso -2q",000,,1250-094,0.85,,"001-112(1) ",13.99,1
+#36206,,MT-EUEXP,PT,"Pedro Vieira",PT-08,Portimão,"Praceta da cooperativa, lote 8, 3ºesquerdo B vale de lagar","961 969 146",,8500-830,0.85,,"001-135(1) ",13.99,1
+#36303,,MT-EUEXP,PT,"LUIS GAIBA",PT-11,Mafra,"Rua Vieira Lusitano N 3, 2 Dto, Mafra","+351 969 875 887",,2640-543,0.85,,"001-118(4) ",13.99,1
+#36475,,MT-EUEXP,PT,"eduardo  cardoso",PT-11," Lisbon","Rua Antonio saldanha, 17",000,,1400019,0.85,,"001-112(1) ",13.99,1
+#36802,,MT-EUEXP,PT,"Luis Magro",PT-11,"Porto Salvo","ActivoBank/Millenniumbcp, Taguspark, Edf 9, Piso 0","+351 911 025 984",,2744-005,0.85,,"001-19202(2) , 001-164(1) ",13.99,1
+#29080,,MT-EUEXP,PT,"Bernardo Mendes",PT-11,Parede,"Rua Cidade de Évora N7 1o Frente ","927 482 540",,2775-309,0.85,,"001-21705(1) ",13.99,1
+#35887,,MT-EUEXP,CY,"Stavros Zachariou",,"Larnaca, Xylotymvou","Petraki Yiallourou 3",000,,7510,0.85,,"001-21707(1) ",13.99,1
+#35932,,MT-EUEXP,CY,"Magda Shitta",,Limassol,"Piliou 9, Petrou & Pavlou","99 606072",,3077,0.85,,"001-136(1) ",13.99,1
+#36200,,MT-EUEXP,CY,"michalis kkailis",,NICOSIA,"P.DIMITRAKOPOULOU 7, APP.501, 1090 AGIOI OMOLOGITES","+357 99 660938",,1090,0.85,,"001-112(1) ",13.99,1
+#36430,,,EE,"Raimond Lunev",,Haapsalu,"Õpetaja 16","+372 505 3016",,90504,0.85,,"001-184(1) ",13.99,1
+#35806,,WYT-SWISS,HR,"Zoran Novacic",,Umag,"Babici, Kanal 205a",000,,52470,0.85,,"001-112(1) ",13.99,1
+#35875,,WYT-SWISS,HR,"ivan miholić",,Zagreb,"Mrkšina 3a",000,,10020,0.85,,"001-21704(1) ",13.99,1
+#35923,,WYT-SWISS,HR,"Romo Puharić",,Makarska,"Makarskih Biskupa 3",000,,21300,0.85,,"001-21707(1) ",13.99,1
+#36155,,WYT-SWISS,HR,"Mirjana Rotja",,Kutjevo,"Stjepana Radića 8, 34340","095 738 0205",,385,0.85,,"001-135(1) ",13.99,1
+#36437,,WYT-SWISS,HR,"Josip Ćurić",,"velika gorica","Duga ulica 39","+385 99 412 6260",,10412,0.85,,"001-135(1) ",13.99,1
+#36108,,WYT-GM,GR,"nikos angelopoulos",,"halandri ","androutsou 1",000,,15233,0.85,,"001-137(1) , 001-21706(1) ",13.99,1
+#36166,,WYT-GM,GR,"ted Poulios",,"nea halkidona","th.petala 16","697 964 0605",,14343,0.85,,"001-135(1) ",13.99,1
+#36268,,WYT-GM,GR,"Αγγελος Αποστολοπουλος",,Παρος,Παροικια,6943197987,,84400,0.85,,"001-112(1) ",13.99,1
+#36432,,WYT-GM,GR,"Maria  Athanasopoulou",,Dafni,"Ethnarchou makariou 19-21","00 45 29 72 71 79",,17235,0.85,,"001-112(1) ",13.99,1
+#36461,,WYT-GM,GR,"lila diavati",,thessaloniki,"velissariou 26","+30 693 736 2543",,54640,0.85,,"001-21707(1) ",13.99,1
+#36464,,WYT-GM,GR,"Yiannis Avgeris",,"Tilos Island","Livadia, Tilos, Dan Tilos","+30 698 000 6657",,85002,0.85,,"001-137(1) ",13.99,1
+#36133,,WYT-SWISS,RO,"Daniel Daia",,Timisoara,"Str. carol Davila, No. 43, Str. Verde, No. 4A",000,,300262,0.85,,"001-112(1) ",13.99,1
+#36439,,WYT-SWISS,RO,"Mutrescu Răzvan",,"Siret ","Str. Lațcu Vodă nr. 14A ","0752 266 879",,725500,0.85,,"001-21707(1) ",13.99,1
+#36492,,WYT-SWISS,RO,"iulian cata",,Sebes,"Str . Școli nr 130 sat Rahau Mun. Sebes jud Alba","0756 306 737",,515802,0.85,,"001-135(1) ",13.99,1
+#36606,,MT-EUEXP,BG,"Isaya Simeonova",,Sofia,"Sofia airport, terminal 1, departure","+359 88 856 9360",,1540,0.85,,"001-28001(1) ",13.99,1
+#36496,,WYT-SWISS,CZ,"David Svoboda - Martínek",,Litoměřice,"Nezvalova, 21","733 466 342",,41201,0.85,,"001-112(1) ",13.99,1
+#36101,,MT-EUEXP,PL,"Barbara Misiorna",,Warszawa,"Krasnobrodzka 2/55",000,,03-214,0.85,,"001-112(1) ",13.99,1
+#36309,,MT-EUEXP,PL,"Andrzej Polak",,Krakow,"Chodkiewicza 5",000,,31-532,0.85,,"001-112(1) ",13.99,1
+#36173,,MT-EUEXP,SK,"Rene Zmitko",,Hrabičov,"Hrabičov 247","0918 719 413",,96678,0.85,,"001-112(1) ",13.99,1
+#35817,,,SA,"ALHARETH IBRAHIM",,Dhahran,"P.O. Box 10941 (277119), Saudi Aramco","056 088 8357",,31311,0.85,,"001-112(4) ",13.99,1
+#36524,,,AE,"Ahmed Al Obaidli",AZ,"Abu Dhabi","Al Samha","+971 50 411 3728",,,0.85,,"001-112(1) , 001-110(3) ",13.99,1

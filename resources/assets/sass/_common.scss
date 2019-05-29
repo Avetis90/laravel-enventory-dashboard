@@ -1,0 +1,32 @@
+textarea {
+  resize: vertical!important;
+}
+
+.form-in-table {
+  display: inline-block;
+  button {
+    border: none;
+    background: transparent;
+    color: #3c8dbc;
+    &:hover {
+      color: #72afd2;
+    }
+  }
+}
+.notification {
+  position: absolute;
+  right: 0;
+  min-width: 350px;
+  z-index: 1;
+
+  .info-box-content-center {
+    height:90px;
+    line-height:90px;
+    vertical-align: middle;
+  }
+  .action-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}

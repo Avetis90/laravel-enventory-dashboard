@@ -1,0 +1,27 @@
+.full-footer {
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  color: #444;
+  border-top: 1px solid #d2d6de;
+}
+.image-fill {
+  background: #fff;
+}
+.image-like {
+  margin: auto;
+  z-index: 5;
+  height: 90px;
+  width: 90px;
+  border: 3px solid;
+  border-color: transparent;
+  border-color: rgba(255,255,255,0.2);
+}
+
+.image-fixed-size {
+  width: 45px;
+  height: 45px;
+}
+.offset-content {
+  padding: 20px 0;
+}
